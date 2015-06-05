@@ -1,2 +1,2 @@
 # resume
-Repository for resume/CV
+Repository for personal resume/CV, Will Barnes, Rice University;
