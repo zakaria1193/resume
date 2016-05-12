@@ -12,138 +12,154 @@ preamble:
     twitter: wtbarnes_
     github: wtbarnes
 sections:
-  personal_information:
-    title: Personal Information
-    items:
-    - name: Birthdate
-      value: 15 October 1990
-    - name: Citizenship
-      value: USA
-  education:
-    title: Education
-    entries:
-    - school: Rice University
-      degree: Ph.D. Physics
-      location: Houston, TX USA
-      dates: 2016-present (expected 2018)
-      items:
-        - "Thesis: Modeling Hot Plasma in the Solar Corona (working title)"
-        - "Advisor: Stephen Bradshaw, Ph.D."
-    - school: Rice University
-      degree: M.S. Physics
-      location: Houston, TX USA
-      gpa: 3.88/4.00
-      dates: 2013-2016
-      items:
-    - school: Baylor University
-      location: Waco, TX USA
-      dates: 2009-2013
-      gpa: 3.89/4.00
-      degree: B.S. Astrophysics
-      items:
-        - "Thesis: Astrophysical Applications of Dusty Plasma Physics, Advisor: Lorin Matthews, Ph.D."
-        - University Honors Program, Magna Cum Laude, Phi Beta Kappa
-        - "Minors: Mathematics, Great Texts of the Western Tradition"
-  computing:
-    title: Computing Skills
-    items:
-      - name: Languages
-        value: C/C++, IDL, Mathematica, MATLAB, Python
-      - name: Software Tools
-        value: git/GitHub, LaTeX, SLURM, TORQUE
-      - name: Operating Systems
-        value: Linux, Mac OS X
-  publications:
-    title: Publications
-    entries:
-      - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores I. Single Nanoflares
-        authors: W.T. Barnes, P.J. Cargill, and S.J. Bradshaw
-        journal: submitted
-        year: 2016
-        doi:
-        url:
-      - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores II. Nanoflare Trains
-        authors: W.T. Barnes, P.J. Cargill, and S.J. Bradshaw
-        journal: in preparation
-        year: 2016
-        doi:
-        url:
-  presentations:
-    title: Talks and Posters
-    entries:
-      - date: 9 November 2015
-        location: Houston, TX
-        type: Talk
-        institution: Rice University
-        event: Space Physics Seminar Series
-        title: Impacts of Two-fluid Effects on Emission from Impulsively Heated Coronal Loops
-        url:
-      - date: 21-23 July 2015
-        location: Cambridge, UK
-        type: Poster
-        institution: Unversity of Cambridge
-        event: Coronal Loop Workshop VII
-        title: Effects of Ion Heating on Emission Measure of Coronal Loops in Active Region Cores
-        url:
-      - date: 26-30 April 2015
-        location: Indianapolis, IN
-        type: Poster
-        institution: American Astronomical Society
-        event: Triennial Earth-Sun Summit
-        title: Nonnegative Matrix Factorization as a Method for Studying Coronal Heating
-        url: "http://adsabs.harvard.edu/abs/2015TESS....120306B"
-      - date: 18-22 March 2013
-        location: The Woodlands, TX
-        type: Poster
-        institution: Lunar and Planetary Science Institute
-        event: 44th Annual Lunar and Planetary Science Conference
-        title: "Dust Grain Growth in a Protoplanetary Disk: Effects of Location on Charge and Size"
-        url: "http://adsabs.harvard.edu/abs/2013LPI....44.1897B"
-      - date: 14 September 2012
-        location: College Station, TX
-        type: Talk
-        institution: Texas A&M University
-        event: Texas Undergraduate Astronomy Research Symposium
-        title: Dust Grain Charging in a Protoplanetary Disk
-        url:
-  positions:
-    title: Research positions
-    entries:
-      - title: Graduate Research Assistant
-        institution: Rice University
-        location: Houston, TX USA
-        dates: 2013--present
-        description: Research assistant in space physics division of the Department of Physics and Astronomy, Rice University. Research duties concentrated in computational solar physics. Teaching duties include, but are not limited to, a minimum of four semesters of leading lab sections of introductory physics.
-      - title: NSF REU Research Fellow
-        institution: CASPER, Baylor University
-        location: Waco, TX USA
-        dates: June 2012--August 2012
-        description: Accepted to National Science Foundation Research Experience for Undergraduates program in the Center for Astrophysics, Space Physics, and Engineering Research, Baylor University. Studied the effects of dust grain charging on aggregate size in a protoplanetary disk. Numerical work in extending kinetic model of grain growth to examine effect of disk location on grain charging.
-      - title: Summer Undergraduate Research Assistant
-        institution: Baylor University
-        location: Waco, TX USA
-        dates: June 2011--August 2011
-        description: Awarded a Summer Undergraduate Research in Physics (SURPh) grant from Department of Physics, Baylor University. Conducted research on anomalies in Saturn's F Ring by improving numerical models that simulate perturbed orbits of charged dust grains in a plasma environment.
-  research:
-    title: Research Interests
-    description: Broadly, my research interests are in solar physics, specifically in the numerical modeling of plasma dynamics in the solar corona. I am interested in using hydrodynamic models to study nanoflare heating in the corona and how these modeled results can be compared to observations from instruments. Additionally, I am interested in using forward modeling to explore how novel machine learning techniques might be used to extract heating properties from active region core emission.
-  honors:
-    title: Honors and Awards
-    items:
-      - Studentship Travel Award for 2015,2016 SPD Annual Meeting, Solar Physics Division of the American Astronomical Society
-      - Dean's List, 7 of 8 semesters, Baylor University
-      - President's Gold Scholarship (GPA of at least 3.0, 12 semester hours), all semesters
-      - Gordon K. Teal Scholarship, 2 academic years
-      - Herbert D. Schwetman Scholarship, 2 academic years
-      - 2013 URSA Scholars Week Outstanding Research Poster in Physics
-  teaching:
-    title: Teaching Experience
-    entries:
-      - dates: Spring 2014, Spring 2015
-        title: Lab Teaching Assistant
-        class: PHYS 102: Electricity and Magnetism
-        description: Instructed lab sections of 40+ undergraduate students on topics including electrostatic interactions, magnetic induction, and basic circuits.
-      - dates: Fall 2014, Fall 2015
-        title: Lab Teaching Assistant
-        class: PHYS 101: Mechanics
-        description: Instructed lab sections of 40+ undergraduate students on topics including kinematics, collisions, and simple harmonic motion.
+- title: Personal Information
+  cvitems:
+  - name: Birthdate
+    value: 15 October 1990
+  - name: Citizenship
+    value: USA
+- title: Education
+  entries:
+  - school: Rice University
+    degree: Ph.D. Physics
+    location: Houston, TX USA
+    dates: 2016-present (expected 2018)
+    gpa:
+    cvlistitems:
+      - "Thesis: Modeling Hot Plasma in the Solar Corona (working title)"
+      - "Advisor: Stephen Bradshaw, Ph.D."
+  - school: Rice University
+    degree: M.S. Physics
+    location: Houston, TX USA
+    gpa: "GPA: 3.88/4.00"
+    dates: 2013-2016
+    cvlistitems:
+  - school: Baylor University
+    location: Waco, TX USA
+    dates: 2009-2013
+    gpa: "GPA: 3.89/4.00"
+    degree: B.S. Astrophysics
+    cvlistitems:
+      - "Thesis: Astrophysical Applications of Dusty Plasma Physics, Advisor: Lorin Matthews, Ph.D."
+      - University Honors Program, Magna Cum Laude, Phi Beta Kappa
+      - "Minors: Mathematics, Great Texts of the Western Tradition"
+- title: Computing Skills
+  cvitems:
+  - name: Languages
+    value: C/C++, IDL, Mathematica, MATLAB, Python
+  - name: Software Tools
+    value: git/GitHub, LaTeX, SLURM, TORQUE
+  - name: Operating Systems
+    value: Linux, Mac OS X
+- title: Publications
+  entries:
+  - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores I. Single Nanoflares
+    authors: W.T. Barnes, P.J. Cargill, and S.J. Bradshaw
+    journal: submitted
+    year: 2016
+    doi:
+    url:
+  - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores II. Nanoflare Trains
+    authors: W.T. Barnes, P.J. Cargill, and S.J. Bradshaw
+    journal: in preparation
+    year: 2016
+    doi:
+    url:
+- title: Talks and Posters
+  entries:
+  - date: 9 November 2015
+    location: Houston, TX
+    type: Talk
+    institution: Rice University
+    event: Space Physics Seminar Series
+    title: Impacts of Two-fluid Effects on Emission from Impulsively Heated Coronal Loops
+    url:
+  - date: 21-23 July 2015
+    location: Cambridge, UK
+    type: Poster
+    institution: Unversity of Cambridge
+    event: Coronal Loop Workshop VII
+    title: Effects of Ion Heating on Emission Measure of Coronal Loops in Active Region Cores
+    url:
+  - date: 26-30 April 2015
+    location: Indianapolis, IN
+    type: Poster
+    institution: American Astronomical Society
+    event: Triennial Earth-Sun Summit
+    title: Nonnegative Matrix Factorization as a Method for Studying Coronal Heating
+    url: "http://adsabs.harvard.edu/abs/2015TESS....120306B"
+  - date: 18-22 March 2013
+    location: The Woodlands, TX
+    type: Poster
+    institution: Lunar and Planetary Science Institute
+    event: 44th Annual Lunar and Planetary Science Conference
+    title: "Dust Grain Growth in a Protoplanetary Disk: Effects of Location on Charge and Size"
+    url: "http://adsabs.harvard.edu/abs/2013LPI....44.1897B"
+  - date: 14 September 2012
+    location: College Station, TX
+    type: Talk
+    institution: Texas A&M University
+    event: Texas Undergraduate Astronomy Research Symposium
+    title: Dust Grain Charging in a Protoplanetary Disk
+    url:
+- title: Research positions
+  entries:
+  - title: Graduate Research Assistant
+    institution: Rice University
+    location: Houston, TX USA
+    dates: 2013--present
+    description: Research assistant in space physics division of the Department of Physics and Astronomy, Rice University. Research duties concentrated in computational solar physics. Teaching duties include, but are not limited to, a minimum of four semesters of leading lab sections of introductory physics.
+  - title: NSF REU Research Fellow
+    institution: CASPER, Baylor University
+    location: Waco, TX USA
+    dates: June 2012--August 2012
+    description: Accepted to National Science Foundation Research Experience for Undergraduates program in the Center for Astrophysics, Space Physics, and Engineering Research, Baylor University. Studied the effects of dust grain charging on aggregate size in a protoplanetary disk. Numerical work in extending kinetic model of grain growth to examine effect of disk location on grain charging.
+  - title: Summer Undergraduate Research Assistant
+    institution: Baylor University
+    location: Waco, TX USA
+    dates: June 2011--August 2011
+    description: Awarded a Summer Undergraduate Research in Physics (SURPh) grant from Department of Physics, Baylor University. Conducted research on anomalies in Saturn's F Ring by improving numerical models that simulate perturbed orbits of charged dust grains in a plasma environment.
+- title: Research Interests
+  description: Broadly, my research interests are in solar physics, specifically in the numerical modeling of plasma dynamics in the solar corona. I am interested in using hydrodynamic models to study nanoflare heating in the corona and how these modeled results can be compared to observations from instruments. Additionally, I am interested in using forward modeling to explore how novel machine learning techniques might be used to extract heating properties from active region core emission.
+- title: Honors and Awards
+  cvlistitems:
+  - Studentship Travel Award for 2015,2016 SPD Annual Meeting, Solar Physics Division of the American Astronomical Society
+  - Dean's List, 7 of 8 semesters, Baylor University
+  - President's Gold Scholarship (GPA of at least 3.0, 12 semester hours), all semesters
+  - Gordon K. Teal Scholarship, 2 academic years
+  - Herbert D. Schwetman Scholarship, 2 academic years
+  - 2013 URSA Scholars Week Outstanding Research Poster in Physics
+- title: Teaching Experience
+  entries:
+    - dates: Spring 2014, Spring 2015
+      title: Lab Teaching Assistant
+      class: "PHYS 102: Electricity and Magnetism"
+      description: Instructed lab sections of 40+ undergraduate students on topics including electrostatic interactions, magnetic induction, and basic circuits.
+    - dates: Fall 2014, Fall 2015
+      title: Lab Teaching Assistant
+      class: "PHYS 101: Mechanics"
+      description: Instructed lab sections of 40+ undergraduate students on topics including kinematics, collisions, and simple harmonic motion.
+- title: Societies and Associations
+  entries:
+  - title: National Honors Society
+    dates: April 2009-May 2013
+    org: Alpha Lambda Delta
+    desc: Completed 10 hours of service per semester.
+  - title: National Service Fraternity, Zeta Omega chapter
+    dates: September 2010-May 2013
+    org: National Service Fraternity, Zeta Omega chapter
+    desc: Served as historian and treasurer. Completed 35 hours of service per semester. Managed finances for the organization. Organized a fundraiser.
+  - title: National Physics Honors Society
+    dates: April 2012-present
+    org: Sigma Pi Sigma
+    desc: Requirements for entry include being in upper-third of the class and completion of at least three semester of college course work in physics.
+  - title: President
+    dates: September 2009-May 2013
+    org: Society of Physics Students
+    desc: As president, initiated rechartering of university chapter. Scheduled and presided over meetings. Organized end of the year luncheon and design and printing of t-shirts.
+- title: Employment Experience
+  entries:
+  - title: Office Assistant
+    dates: January 2010-May 2013
+    org: Department of Physics, Baylor University
+    desc: Assisted with examinations and attendance for class of 300. Helped with departmental events and mailing.
