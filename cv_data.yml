@@ -67,57 +67,60 @@ sections:
     url:
 - title: Talks and Posters
   entries:
-  - date: 9 November 2015
+  - dates: 9 November 2015
     location: Houston, TX
     type: Talk
     institution: Rice University
     event: Space Physics Seminar Series
     title: Impacts of Two-fluid Effects on Emission from Impulsively Heated Coronal Loops
     url:
-  - date: 21-23 July 2015
+  - dates: 21-23 July 2015
     location: Cambridge, UK
     type: Poster
     institution: Unversity of Cambridge
     event: Coronal Loop Workshop VII
     title: Effects of Ion Heating on Emission Measure of Coronal Loops in Active Region Cores
     url:
-  - date: 26-30 April 2015
+  - dates: 26-30 April 2015
     location: Indianapolis, IN
     type: Poster
     institution: American Astronomical Society
     event: Triennial Earth-Sun Summit
     title: Nonnegative Matrix Factorization as a Method for Studying Coronal Heating
     url: "http://adsabs.harvard.edu/abs/2015TESS....120306B"
-  - date: 18-22 March 2013
+  - dates: 18-22 March 2013
     location: The Woodlands, TX
     type: Poster
     institution: Lunar and Planetary Science Institute
     event: 44th Annual Lunar and Planetary Science Conference
     title: "Dust Grain Growth in a Protoplanetary Disk: Effects of Location on Charge and Size"
     url: "http://adsabs.harvard.edu/abs/2013LPI....44.1897B"
-  - date: 14 September 2012
+  - dates: 14 September 2012
     location: College Station, TX
     type: Talk
     institution: Texas A&M University
     event: Texas Undergraduate Astronomy Research Symposium
     title: Dust Grain Charging in a Protoplanetary Disk
     url:
-- title: Research positions
+- title: Research Positions
   entries:
   - title: Graduate Research Assistant
     institution: Rice University
     location: Houston, TX USA
     dates: 2013--present
+    advisor: Stephen Bradshaw, Ph.D.
     description: Research assistant in space physics division of the Department of Physics and Astronomy, Rice University. Research duties concentrated in computational solar physics. Teaching duties include, but are not limited to, a minimum of four semesters of leading lab sections of introductory physics.
   - title: NSF REU Research Fellow
     institution: CASPER, Baylor University
     location: Waco, TX USA
     dates: June 2012--August 2012
+    advisor: Lorin Matthews, Ph.D.
     description: Accepted to National Science Foundation Research Experience for Undergraduates program in the Center for Astrophysics, Space Physics, and Engineering Research, Baylor University. Studied the effects of dust grain charging on aggregate size in a protoplanetary disk. Numerical work in extending kinetic model of grain growth to examine effect of disk location on grain charging.
   - title: Summer Undergraduate Research Assistant
     institution: Baylor University
     location: Waco, TX USA
     dates: June 2011--August 2011
+    advisor: Lorin Matthews, Ph.D.
     description: Awarded a Summer Undergraduate Research in Physics (SURPh) grant from Department of Physics, Baylor University. Conducted research on anomalies in Saturn's F Ring by improving numerical models that simulate perturbed orbits of charged dust grains in a plasma environment.
 - title: Research Interests
   description: Broadly, my research interests are in solar physics, specifically in the numerical modeling of plasma dynamics in the solar corona. I am interested in using hydrodynamic models to study nanoflare heating in the corona and how these modeled results can be compared to observations from instruments. Additionally, I am interested in using forward modeling to explore how novel machine learning techniques might be used to extract heating properties from active region core emission.
@@ -144,22 +147,22 @@ sections:
   - title: National Honors Society
     dates: April 2009-May 2013
     org: Alpha Lambda Delta
-    desc: Completed 10 hours of service per semester.
+    description: Completed 10 hours of service per semester.
   - title: National Service Fraternity, Zeta Omega chapter
     dates: September 2010-May 2013
     org: National Service Fraternity, Zeta Omega chapter
-    desc: Served as historian and treasurer. Completed 35 hours of service per semester. Managed finances for the organization. Organized a fundraiser.
+    description: Served as historian and treasurer. Completed 35 hours of service per semester. Managed finances for the organization. Organized a fundraiser.
   - title: National Physics Honors Society
     dates: April 2012-present
     org: Sigma Pi Sigma
-    desc: Requirements for entry include being in upper-third of the class and completion of at least three semester of college course work in physics.
+    description: Requirements for entry include being in upper-third of the class and completion of at least three semester of college course work in physics.
   - title: President
     dates: September 2009-May 2013
     org: Society of Physics Students
-    desc: As president, initiated rechartering of university chapter. Scheduled and presided over meetings. Organized end of the year luncheon and design and printing of t-shirts.
+    description: As president, initiated rechartering of university chapter. Scheduled and presided over meetings. Organized end of the year luncheon and design and printing of t-shirts.
 - title: Employment Experience
   entries:
   - title: Office Assistant
     dates: January 2010-May 2013
     org: Department of Physics, Baylor University
-    desc: Assisted with examinations and attendance for class of 300. Helped with departmental events and mailing.
+    description: Assisted with examinations and attendance for class of 300. Helped with departmental events and mailing.

@@ -2,34 +2,8 @@ import os,sys
 import logging
 import yaml
 import jinja2
-import re
-
-LATEX_SUBS = (
-    (re.compile(r'\\'), r'\\textbackslash'),
-    (re.compile(r'([{}_#%&$])'), r'\\\1'),
-    (re.compile(r'~'), r'\~{}'),
-    (re.compile(r'\^'), r'\^{}'),
-    (re.compile(r'"'), r"''"),
-    (re.compile(r'\.\.\.+'), r'\\ldots'),
-)
-
-#define some filters
-def escape_tex(value):
-    newval = value
-    for pattern, replacement in LATEX_SUBS:
-        newval = pattern.sub(replacement, newval)
-    return newval
-
-def tex_section_sorter(section,title,index):
-    """Change format based on section. Customized for my specific setup"""
-    cv_listitem_format = '\cvlistitem{%s}'
-    if title=='Education':
-        return_list =  [section['dates'], section['degree'], section['school'], section['location'], section['gpa'] if section['gpa'] else '','']
-        if section['cvlistitems']:
-            return_list[-1] = '\n'.join([cv_listitem_format%(i) for i in section['cvlistitems']])
-        return return_list[index]
-    else:
-        return ''
+sys.path.append(os.path.dirname(os.path.realpath(__file__)))
+import filters
 
 class BuildCV(object):
     """Build markdown and tex files of CV from YAML using jinja templates"""
@@ -47,7 +21,7 @@ class BuildCV(object):
             self.yaml_obj = yaml.load(f)
 
     def config_jinja_env(self,filters=[]):
-        """Setup jinja environment. See http://flask.pocoo.org/snippets/55/"""
+        """Setup jinja environment. """
         #set up environment
         self.jenv = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.join(os.path.dirname(os.path.realpath(__file__)),'templates')))
         #define new delimiters to avoid TeX conflicts
@@ -71,5 +45,5 @@ class BuildCV(object):
 
 if __name__=='__main__':
     cv_builder = BuildCV('cv_data.yml', md_out_file='test_md_cv.md', tex_out_file='test_tex_cv.tex')
-    cv_builder.config_jinja_env(filters=[escape_tex,tex_section_sorter])
+    cv_builder.config_jinja_env(filters=[filters.escape_tex, filters.tex_section_sorter, filters.tex_pub_sorter])
     cv_builder.write_tex_cv()

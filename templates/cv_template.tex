@@ -35,7 +35,11 @@
   ((= More complicated entries, apply custom filter =))
   ((* elif section.entries *))
   ((* for entry in section.entries *))
+  ((* if section.title=='Publications' *))
+  \cvlistitem{((( entry|tex_pub_sorter )))}
+  ((* else *))
   \cventry{((( entry|tex_section_sorter(section.title,0)|escape_tex )))}{((( entry|tex_section_sorter(section.title,1)|escape_tex )))}{((( entry|tex_section_sorter(section.title,2)|escape_tex )))}{((( entry|tex_section_sorter(section.title,3)|escape_tex )))}{((( entry|tex_section_sorter(section.title,4)|escape_tex )))}{((( entry|tex_section_sorter(section.title,5) )))}
+  ((* endif *))
   ((* endfor *))
   ((* endif *))
   %
