@@ -40,7 +40,7 @@ def tex_section_sorter(section,title,index):
         return_list = [section['dates'], section['title'], section['org'], '', '', section['description']]
     else:
         logging.error('Unrecognized title: %s'%(title))
-        
+
     return return_list[index]
 
 def tex_pub_sorter(entry):
@@ -49,3 +49,23 @@ def tex_pub_sorter(entry):
         return '%s, \\textit{%s}, %s, %s, \href{%s}{%s}'%(entry['authors'], entry['title'], entry['journal'], entry['year'], entry['url'], entry['doi'])
     else:
         return '%s, \\textit{%s}, %s, %s'%(entry['authors'], entry['title'], entry['journal'], entry['year'])
+
+def md_section_sorter(entry,title):
+    """Format markdown sections for different types"""
+    if title == 'Education':
+        return_str = '%s, %s / %s '%(entry['degree'], entry['dates'], entry['school'])
+        if entry['cvlistitems']:
+            return_str += ' / ' + ' / '.join([item for item in entry['cvlistitems']])
+    elif title == 'Talks and Posters':
+        if entry['url']:
+            return_str = '%s: [*%s*](%s) / %s / %s / %s / %s'%(entry['type'], entry['title'], entry['url'], entry['event'], entry['institution'], entry['location'], entry['dates'])
+        else:
+            return_str = '%s: *%s* / %s / %s / %s / %s'%(entry['type'], entry['title'], entry['event'], entry['institution'], entry['location'], entry['dates'])
+    elif title == 'Publications':
+        return_str = '%s, *%s*, %s, %s'%(entry['authors'], entry['title'], entry['journal'], entry['year'])
+        if entry['url'] and entry['doi']:
+            return_str += ', [%s](%s)'%(entry['doi'],entry['url'])
+    else:
+        logger.error('Unrecognized title: %s'%(title))
+
+    return return_str
