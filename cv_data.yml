@@ -67,6 +67,13 @@ sections:
     url:
 - title: Talks and Posters
   entries:
+  - dates: 31 May-3 June 2016
+    location: Boulder, CO
+    type: Talk
+    institution: American Astronomical Society
+    event: 47th Annual Solar Physics Division Meeting
+    title: Hot Non-flaring Plasmas in Active Region Cores Heated by Single Nanoflares
+    url: "http://adsabs.harvard.edu/abs/2016SPD....4720203B"
   - dates: 9 November 2015
     location: Houston, TX
     type: Talk
@@ -126,12 +133,14 @@ sections:
   description: Broadly, my research interests are in solar physics, specifically in the numerical modeling of plasma dynamics in the solar corona. I am interested in using hydrodynamic models to study nanoflare heating in the corona and how these modeled results can be compared to observations from instruments. Additionally, I am interested in using forward modeling to explore how novel machine learning techniques might be used to extract heating properties from active region core emission.
 - title: Honors and Awards
   cvlistitems:
-  - Studentship Travel Award for 2015,2016 SPD Annual Meeting, Solar Physics Division of the American Astronomical Society
-  - Dean's List, 7 of 8 semesters, Baylor University
-  - President's Gold Scholarship (GPA of at least 3.0, 12 semester hours), all semesters
-  - Gordon K. Teal Scholarship, 2 academic years
-  - Herbert D. Schwetman Scholarship, 2 academic years
-  - 2013 URSA Scholars Week Outstanding Research Poster in Physics
+  - William and Elva Gordon Fellowship, Rice University, May 2016
+  - Chuoke Award for Second- and Third-year Graduate Students, Rice University, May 2016
+  - Studentship Travel Award for 2015,2016 SPD Annual Meetings, Solar Physics Division of the American Astronomical Society
+  - Dean's List, Baylor University, 7 of 8 semesters
+  - President's Gold Scholarship (GPA of at least 3.0, 12 semester hours), Baylor University, all semesters
+  - Gordon K. Teal Scholarship, Dept. of Physics, Baylor University, 2 academic years
+  - Herbert D. Schwetman Scholarship, Dept. of Physics, Baylor University, 2 academic years
+  - URSA Scholars Week Outstanding Research Poster in Physics, Baylor University, 2013
 - title: Teaching Experience
   entries:
     - dates: Spring 2014, Spring 2015

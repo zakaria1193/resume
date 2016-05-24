@@ -45,6 +45,8 @@ Title: CV
 ## Talks and Posters
 
 
+* <div class="lead">Talk: [*Hot Non-flaring Plasmas in Active Region Cores Heated by Single Nanoflares*](http://adsabs.harvard.edu/abs/2016SPD....4720203B) / 47th Annual Solar Physics Division Meeting / American Astronomical Society / Boulder, CO / 31 May-3 June 2016</div>
+
 * <div class="lead">Talk: *Impacts of Two-fluid Effects on Emission from Impulsively Heated Coronal Loops* / Space Physics Seminar Series / Rice University / Houston, TX / 9 November 2015</div>
 
 * <div class="lead">Poster: *Effects of Ion Heating on Emission Measure of Coronal Loops in Active Region Cores* / Coronal Loop Workshop VII / Unversity of Cambridge / Cambridge, UK / 21-23 July 2015</div>
