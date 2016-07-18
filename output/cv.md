@@ -34,7 +34,7 @@ Title: CV
 ## Publications
 
 
-* <div class="lead">W.T. Barnes, P.J. Cargill, and S.J. Bradshaw, *Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores I. Single Nanoflares*, submitted, 2016</div>
+* <div class="lead">W.T. Barnes, P.J. Cargill, and S.J. Bradshaw, *Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores I. Single Nanoflares*, accepted (ApJ), 2016</div>
 
 * <div class="lead">W.T. Barnes, P.J. Cargill, and S.J. Bradshaw, *Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores II. Nanoflare Trains*, in preparation, 2016</div>
 
@@ -44,6 +44,8 @@ Title: CV
 
 ## Talks and Posters
 
+
+* <div class="lead">Poster: [*Understanding the Impact of Nanoflare Heating Frequency on the Observed Emission Measure Distribution*](http://shinecon.org/shine2016/ViewAbstract.php?idabs=132) / Solar Heliospheric and Interplanetary Environment (SHINE) Conference / National Science Foundation / Santa Fe, NM / 11-15 July 2016</div>
 
 * <div class="lead">Talk: [*Hot Non-flaring Plasmas in Active Region Cores Heated by Single Nanoflares*](http://adsabs.harvard.edu/abs/2016SPD....4720203B) / 47th Annual Solar Physics Division Meeting / American Astronomical Society / Boulder, CO / 31 May-3 June 2016</div>
 

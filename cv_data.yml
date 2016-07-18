@@ -55,7 +55,7 @@ sections:
   entries:
   - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores I. Single Nanoflares
     authors: W.T. Barnes, P.J. Cargill, and S.J. Bradshaw
-    journal: submitted
+    journal: accepted (ApJ)
     year: 2016
     doi:
     url:
@@ -67,6 +67,13 @@ sections:
     url:
 - title: Talks and Posters
   entries:
+  - dates: 11-15 July 2016
+    location: Santa Fe, NM
+    type: Poster
+    institution: National Science Foundation
+    event: Solar Heliospheric and Interplanetary Environment (SHINE) Conference
+    title: Understanding the Impact of Nanoflare Heating Frequency on the Observed Emission Measure Distribution
+    url: "http://shinecon.org/shine2016/ViewAbstract.php?idabs=132"
   - dates: 31 May-3 June 2016
     location: Boulder, CO
     type: Talk
