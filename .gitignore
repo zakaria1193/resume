@@ -107,6 +107,8 @@ ENV/
 # *.ps
 # *.eps
 # *.pdf
+#ignore generated pdf
+output/*.pdf
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl

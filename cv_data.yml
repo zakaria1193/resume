@@ -46,11 +46,13 @@ sections:
 - title: Computing Skills
   cvitems:
   - name: Languages
-    value: C/C++, IDL, Mathematica, MATLAB, Python
-  - name: Software Tools
-    value: git/GitHub, LaTeX, SLURM, TORQUE
-  - name: Operating Systems
-    value: Linux, Mac OS X
+    value: Bash, C, C++, Python
+  - name: Scientific Packages
+    value: IDL, Mathematica, MATLAB, NumPy, SciPy, SLURM, TORQUE
+  - name: Markup
+    value: CSS, HTML, LaTeX, markdown, reStructuredText
+  - name: DevOps
+    value: git/GitHub, Travis CI, Sphinx
 - title: Publications
   entries:
   - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores I. Single Nanoflares

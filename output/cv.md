@@ -21,11 +21,13 @@ Title: CV
 ## Computing Skills
 
 
-* <div class="lead">Languages: C/C++, IDL, Mathematica, MATLAB, Python</div>
+* <div class="lead">Languages: Bash, C, C++, Python</div>
 
-* <div class="lead">Software Tools: git/GitHub, LaTeX, SLURM, TORQUE</div>
+* <div class="lead">Scientific Packages: IDL, Mathematica, MATLAB, NumPy, SciPy, SLURM, TORQUE</div>
 
-* <div class="lead">Operating Systems: Linux, Mac OS X</div>
+* <div class="lead">Markup: CSS, HTML, LaTeX, markdown, reStructuredText</div>
+
+* <div class="lead">DevOps: git/GitHub, Travis CI, Sphinx</div>
 
 
 
