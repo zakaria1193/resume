@@ -34,7 +34,7 @@ def tex_section_sorter(section,title,index):
             return_list[-1] = section['type']+' title: ' + '\href{%s}{%s}'%(section['url'],'\\textit{%s}'%(section['title']))
     elif title=='Research Positions':
         return_list = [section['dates'], section['title'], section['institution'], section['location'],'',section['description']]
-    elif title=='Teaching Experience':
+    elif title=='Teaching/Mentoring Experience':
         return_list = [section['dates'], section['title'], section['class'], '', '', section['description']]
     elif title=='Societies and Associations' or title=='Employment Experience':
         return_list = [section['dates'], section['title'], section['org'], '', '', section['description']]

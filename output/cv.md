@@ -36,9 +36,9 @@ Title: CV
 ## Publications
 
 
-* <div class="lead">W.T. Barnes, P.J. Cargill, and S.J. Bradshaw, *Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores I. Single Nanoflares*, accepted (ApJ), 2016</div>
-
 * <div class="lead">W.T. Barnes, P.J. Cargill, and S.J. Bradshaw, *Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores II. Nanoflare Trains*, in preparation, 2016</div>
+
+* <div class="lead">W.T. Barnes, P.J. Cargill, and S.J. Bradshaw, *Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores I. Single Nanoflares*, accepted (ApJ), 2016</div>
 
 
 

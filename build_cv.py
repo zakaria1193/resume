@@ -56,7 +56,7 @@ if __name__=='__main__':
     #parse command line arguments
     parser = argparse.ArgumentParser(description='Build TeX and Markdown versions of your CV')
     parser.add_argument("--cv_data",help="YAML config file containing all CV data", default=os.path.join(os.path.dirname(os.path.realpath(__file__)),'cv_data.yml'))
-    parser.add_argument("--md_out_file",help="where to write tex version of CV to",default=os.path.join(os.path.dirname(os.path.realpath(__file__)),'output','cv.md'))
+    parser.add_argument("--md_out_file",help="where to write tex version of CV to", default=os.path.join(os.path.dirname(os.path.realpath(__file__)),'output','cv.md'))
     parser.add_argument("--tex_out_file",help="where to write markdown version of CV to",default=os.path.join(os.path.dirname(os.path.realpath(__file__)),'output','cv.tex'))
     parser.add_argument("--pdf_link",help="where to link to PDF version of CV")
     args = parser.parse_args()

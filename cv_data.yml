@@ -55,18 +55,18 @@ sections:
     value: git/GitHub, Travis CI, Sphinx
 - title: Publications
   entries:
-  - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores I. Single Nanoflares
-    authors: W.T. Barnes, P.J. Cargill, and S.J. Bradshaw
-    journal: accepted (ApJ)
-    year: 2016
-    doi:
-    url:
   - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores II. Nanoflare Trains
     authors: W.T. Barnes, P.J. Cargill, and S.J. Bradshaw
     journal: in preparation
     year: 2016
     doi:
     url:
+  - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores I. Single Nanoflares
+    authors: W.T. Barnes, P.J. Cargill, and S.J. Bradshaw
+    journal: accepted (ApJ)
+    year: 2016
+    doi:
+    url: "http://adsabs.harvard.edu/abs/2016arXiv160804776B"
 - title: Talks and Posters
   entries:
   - dates: 11-15 July 2016
@@ -145,13 +145,17 @@ sections:
   - William and Elva Gordon Fellowship, Rice University, May 2016
   - Chuoke Award for Second- and Third-year Graduate Students, Rice University, May 2016
   - Studentship Travel Award for 2015,2016 SPD Annual Meetings, Solar Physics Division of the American Astronomical Society
+  - URSA Scholars Week Outstanding Research Poster in Physics, Baylor University, 2013
   - Dean's List, Baylor University, 7 of 8 semesters
   - President's Gold Scholarship (GPA of at least 3.0, 12 semester hours), Baylor University, all semesters
   - Gordon K. Teal Scholarship, Dept. of Physics, Baylor University, 2 academic years
   - Herbert D. Schwetman Scholarship, Dept. of Physics, Baylor University, 2 academic years
-  - URSA Scholars Week Outstanding Research Poster in Physics, Baylor University, 2013
-- title: Teaching Experience
+- title: Teaching/Mentoring Experience
   entries:
+    - dates: May-August 2016
+      title: Mentor, The SunPy Project
+      class: Google Summer of Code, Open Astronomy
+      description: Mentored an undergraduate student to develop a module in SunPy to calculate the temperature response functions for the AIA instrument on the Solar Dynamics Observatory. SunPy is a community-developed, free and open-source solar data analysis environment for Python.
     - dates: Spring 2014, Spring 2015
       title: Lab Teaching Assistant
       class: "PHYS 102: Electricity and Magnetism"
@@ -168,7 +172,7 @@ sections:
     description: Completed 10 hours of service per semester.
   - title: National Service Fraternity, Zeta Omega chapter
     dates: September 2010-May 2013
-    org: National Service Fraternity, Zeta Omega chapter
+    org: Alpha Phi Omega
     description: Served as historian and treasurer. Completed 35 hours of service per semester. Managed finances for the organization. Organized a fundraiser.
   - title: National Physics Honors Society
     dates: April 2012-present
