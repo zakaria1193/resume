@@ -63,10 +63,10 @@ sections:
     url:
   - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores I. Single Nanoflares
     authors: W.T. Barnes, P.J. Cargill, and S.J. Bradshaw
-    journal: accepted (ApJ)
+    journal: ApJ
     year: 2016
-    doi:
-    url: "http://adsabs.harvard.edu/abs/2016arXiv160804776B"
+    doi: 2016ApJ...829...31B
+    url: "http://adsabs.harvard.edu/abs/2016ApJ...829...31B"
 - title: Talks and Posters
   entries:
   - dates: 11-15 July 2016
