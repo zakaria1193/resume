@@ -47,7 +47,7 @@ sections:
   cvitems:
   - name: Languages
     value: Bash, C, C++, Python
-  - name: Scientific Packages
+  - name: Scientific Computing
     value: IDL, Mathematica, MATLAB, NumPy, SciPy, SLURM, TORQUE
   - name: Markup
     value: CSS, HTML, LaTeX, markdown, reStructuredText
@@ -57,10 +57,10 @@ sections:
   entries:
   - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores II. Nanoflare Trains
     authors: W.T. Barnes, P.J. Cargill, and S.J. Bradshaw
-    journal: in preparation
+    journal: ApJ
     year: 2016
-    doi:
-    url:
+    doi: 2016ApJ...833..217B
+    url: "http://adsabs.harvard.edu/abs/2016ApJ...833..217B"
   - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores I. Single Nanoflares
     authors: W.T. Barnes, P.J. Cargill, and S.J. Bradshaw
     journal: ApJ
@@ -152,6 +152,10 @@ sections:
   - Herbert D. Schwetman Scholarship, Dept. of Physics, Baylor University, 2 academic years
 - title: Teaching/Mentoring Experience
   entries:
+    - dates: Spring 2017
+      title: Guest Lecturer
+      class: "ASTR 201: Stars, Galaxies, and the Universe"
+      description: Gave two guest lectures for non-majors astronomy course of approximately 70 undergraduate students. Topics covered included eclipses, phases of the moon, and the celestial sphere.
     - dates: May-August 2016
       title: Mentor, The SunPy Project
       class: Google Summer of Code, Open Astronomy
@@ -187,4 +191,4 @@ sections:
   - title: Office Assistant
     dates: January 2010-May 2013
     org: Department of Physics, Baylor University
-    description: Assisted with examinations and attendance for class of 300. Helped with departmental events and mailing.
+    description: Assisted with examinations and attendance for introductory astronomy class of approximately 300 students. Helped with departmental events and mailing as well as other miscellaneous duties.
