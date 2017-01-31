@@ -1,0 +1,49 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+\moderncvstyle{((( moderncv_style )))}
+\moderncvcolor{((( moderncv_color )))}
+\usepackage[scale=0.75]{geometry}
+\name{((( db.preamble.name.first )))}{((( db.preamble.name.last )))}
+\title{CV}
+\address{((( db.preamble.address.street )))}{((( db.preamble.address.city )))}{((( db.preamble.country )))}
+\phone[mobile]{((( db.preamble.contact.phone )))}
+\email{((( db.preamble.contact.mail )))}
+\social[github]{((( db.preamble.contact.github )))}
+\AfterPreamble{\hypersetup{
+  pdfauthor={((( db.preamble.name.first ))) ((( db.preamble.name.last )))},
+  pdftitle={CV},
+  pdfsubject={Detailed CV produced with moderncv and jinja2},
+  urlcolor=blue,
+}}
+\begin{document}
+  \makecvtitle
+  ((= Iterate through sections =))
+  ((* for section in db.sections *))
+  ((* if section.title != 'Personal Information' *))
+  \section{((( section.title )))}
+  ((= Simple lists with two entries =))
+  ((* if section.cvitems *))
+  ((* for item in section.cvitems *))
+  \cvitem{((( item.name|escape_tex )))}{((( item.value|escape_tex )))}
+  ((* endfor *))
+  ((= Simple lists with one entry =))
+  ((* elif section.cvlistitems *))
+  ((* for item in section.cvlistitems *))
+  \cvlistitem{((( item|escape_tex )))}
+  ((* endfor *))
+  ((= Single description, no formatting needed =))
+  ((* elif section.description *))
+  ((( section.description|escape_tex )))
+  ((= More complicated entries, apply custom filter =))
+  ((* elif section.entries *))
+  ((* for entry in section.entries *))
+  ((* if section.title=='Publications' *))
+  \cvlistitem{((( entry|tex_pub_sorter )))}
+  ((* else *))
+  \cventry{((( entry|tex_section_sorter(section.title,0)|escape_tex )))}{((( entry|tex_section_sorter(section.title,1)|escape_tex )))}{((( entry|tex_section_sorter(section.title,2)|escape_tex )))}{((( entry|tex_section_sorter(section.title,3)|escape_tex )))}{((( entry|tex_section_sorter(section.title,4)|escape_tex )))}{((( entry|tex_section_sorter(section.title,5) )))}
+  ((* endif *))
+  ((* endfor *))
+  ((* endif *))
+  %
+  ((* endif *))
+  ((* endfor *))
+\end{document}
