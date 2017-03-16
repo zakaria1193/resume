@@ -69,6 +69,12 @@ sections:
     url: "http://adsabs.harvard.edu/abs/2016ApJ...829...31B"
 - title: Talks and Posters
   entries:
+  - dates: 27 February 2017
+    location: Houston, TX
+    type: Talk
+    event: Space Physics Seminar Series
+    institution: Rice University
+    title: A Framework for Forward Modeling Solar Active Regions from Hydrodynamic Simulations of Coronal Loops
   - dates: 11-15 July 2016
     location: Santa Fe, NM
     type: Poster
