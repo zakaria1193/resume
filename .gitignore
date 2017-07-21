@@ -1,3 +1,6 @@
+# ignore default output directory
+output/*
+
 #python
 # Byte-compiled / optimized / DLL files
 __pycache__/
