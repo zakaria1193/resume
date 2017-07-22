@@ -69,6 +69,20 @@ sections:
     url: "http://adsabs.harvard.edu/abs/2016ApJ...829...31B"
 - title: Talks and Posters
   entries:
+  - dates: 10-16 July 2017
+    location: Austin, TX
+    type: Talk
+    event: "SciPy: Scientific Computing in Python"
+    title: "ChiantiPy: a Python package for Astrophysical Spectroscopy"
+    url: "https://youtu.be/79ledxbnrPU"
+    institution: SciPy, Enthought
+  - dates: 27-30 June 2017
+    location: Palermo, Italy
+    event: Coronal Loops Workshop VIII
+    type: Talk
+    title: Observable Signatures of Coronal Heating Frequency in a Global Active Region Model
+    url: "https://wtbarnes.github.io/loops-workshop-2017-talk/"
+    institution: INAF IASF Palermo
   - dates: 27 February 2017
     location: Houston, TX
     type: Talk
