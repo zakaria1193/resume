@@ -69,6 +69,13 @@ sections:
     url: "http://adsabs.harvard.edu/abs/2016ApJ...829...31B"
 - title: Talks and Posters
   entries:
+  - dates: 9-10 October 2017
+    location: Houston, TX
+    type: Poster
+    event: Rice Data Science Conference
+    title: "Timelag Analysis of Global Hydrodynamic Simulations of Active Regions in the Solar Corona"
+    url: "http://dsconference.rice.edu/program/"
+    institution: Rice University
   - dates: 24-28 July 2017
     location: Saint-Sauveur, Quebec, CA
     type: Poster
