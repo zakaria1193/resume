@@ -1,5 +1,7 @@
 ---
-Title: CV
+layout: page
+title: CV
+permalink: CV
 ---
 {% for section in db.sections %}
 {% if section.title=='Education' or section.title=='Computing Skills' or section.title=='Publications' or section.title=='Talks and Posters'%}
