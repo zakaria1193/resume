@@ -28,5 +28,7 @@ permalink: CV
 {% endif %}
 {% endfor %}
 {% if pdf_link %}
-<div class="lead text-center">A complete version of my CV can be found [here]({{ pdf_link }})</div>
+<div class="lead text-center">
+A complete version of my CV can be found [here]({{ pdf_link }})
+</div>
 {% endif %}
