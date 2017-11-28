@@ -1,10 +1,10 @@
-#name:filters.py
-#author: Will Barnes
-#date created: 12 May 2016
-#description: filters for printing TeX to jinja templates. See See http://flask.pocoo.org/snippets/55/ for more info.
-
+"""
+Filters for printing TeX to jinja templates.
+See http://flask.pocoo.org/snippets/55/ for more info.
+"""
 import re
 import logging
+
 
 LATEX_SUBS = (
     (re.compile(r'\\'), r'\\textbackslash'),
@@ -15,13 +15,18 @@ LATEX_SUBS = (
     (re.compile(r'\.\.\.+'), r'\\ldots'),
 )
 
+
 def escape_tex(value):
+    """
+    Escape TeX special characters
+    """
     newval = value
     for pattern, replacement in LATEX_SUBS:
         newval = pattern.sub(replacement, newval)
     return newval
 
-def tex_section_sorter(section,title,index):
+
+def tex_section_sorter(section, title, index):
     """Change format based on section. Customized for my specific setup"""
     cv_listitem_format = '\cvlistitem{%s}'
     if title=='Education':
@@ -43,6 +48,7 @@ def tex_section_sorter(section,title,index):
 
     return return_list[index]
 
+
 def tex_pub_sorter(entry):
     """Format publication list item"""
     if entry['doi'] and entry['url']:
@@ -50,7 +56,8 @@ def tex_pub_sorter(entry):
     else:
         return '%s, \\textit{%s}, %s, %s'%(entry['authors'], entry['title'], entry['journal'], entry['year'])
 
-def md_section_sorter(entry,title):
+
+def md_section_sorter(entry, title):
     """Format markdown sections for different types"""
     if title == 'Education':
         return_str = '%s, %s / %s '%(entry['degree'], entry['dates'], entry['school'])
@@ -66,6 +73,35 @@ def md_section_sorter(entry,title):
         if entry['url'] and entry['doi']:
             return_str += ', [%s](%s)'%(entry['doi'],entry['url'])
     else:
-        logger.error('Unrecognized title: %s'%(title))
+        logging.error('Unrecognized title: %s'%(title))
+
+    return return_str
+
+
+def html_section_sorter(entry, title):
+    """
+    Format HTML sections for different types
+    """
+    if title == 'Education':
+        return_str = '{}, {} / {} '.format(entry['degree'], entry['dates'], entry['school'])
+        if entry['cvlistitems']:
+            return_str += ' / ' + ' / '.join([item for item in entry['cvlistitems']])
+    elif title == 'Talks and Posters':
+        if entry['url']:
+            pub_title = '<a href="{}"><em>{}</em></a>'.format(entry['url'], entry['title'])
+        else:
+            pub_title = '<em>{}</em>'.format(entry['title'])
+        return_str = '<strong>{}</strong>: {} / {} / {} / {} / {}'.format(entry['type'], pub_title,
+                                                                          entry['event'],
+                                                                          entry['institution'],
+                                                                          entry['location'],
+                                                                          entry['dates'])
+    elif title == 'Publications':
+        return_str = '{}, <em>{}</em>, {}, {}'.format(entry['authors'], entry['title'],
+                                                      entry['journal'], entry['year'])
+        if entry['url'] and entry['doi']:
+            return_str += ', <a href="{}"><em>{}</em></a>'.format(entry['url'], entry['doi'])
+    else:
+        logging.error('Unrecognized title: {}'.format(title))
 
     return return_str
