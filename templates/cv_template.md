@@ -8,19 +8,25 @@ permalink: CV
 ## {{ section.title }}
 {% if section.cvitems %}
 {% for item in section.cvitems %}
-* <div class="lead">{{ item.name }}: {{ item.value }}</div>
+<div class="lead">
+* {{ item.name }}: {{ item.value }}
+</div>
 {% endfor %}
 {% elif section.cvlistitems %}
 {% for item in section.cvlistitems %}
-* <div class="lead">{{ item }}</div>
+<div class="lead">
+* {{ item }}
+</div>
 {% endfor %}
 {% else %}
 {% for entry in section.entries %}
-* <div class="lead">{{ entry|md_section_sorter(section.title) }}</div>
+<div class="lead">
+* {{ entry|md_section_sorter(section.title) }}
+</div>
 {% endfor %}
 {% endif %}
 {% endif %}
 {% endfor %}
 {% if pdf_link %}
-<center><div class="lead">A complete version of my CV can be found [here]({{ pdf_link }})</div></center>
+<div class="lead text-center">A complete version of my CV can be found [here]({{ pdf_link }})</div>
 {% endif %}
