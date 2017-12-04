@@ -33,10 +33,10 @@ def tex_section_sorter(section, title, index):
         return_list =  [section['dates'], section['degree'], section['school'], section['location'], section['gpa'] if section['gpa'] else '','']
         if section['cvlistitems']:
             return_list[-1] = '\n'.join([cv_listitem_format%(i) for i in section['cvlistitems']])
-    elif title=='Talks and Posters':
-        return_list = [section['dates'], section['institution'], section['event'], section['location'],'',section['type']+' title: '+'\\textit{%s}'%(section['title'])]
+    elif title == 'Talks' or title == 'Posters':
+        return_list = [section['dates'], section['institution'], section['event'], section['location'],'','\\textit{%s}'%(section['title'])]
         if section['url']:
-            return_list[-1] = section['type']+' title: ' + '\href{%s}{%s}'%(section['url'],'\\textit{%s}'%(section['title']))
+            return_list[-1] = '\href{%s}{%s}'%(section['url'],'\\textit{%s}'%(section['title']))
     elif title=='Research Positions':
         return_list = [section['dates'], section['title'], section['institution'], section['location'],'',section['description']]
     elif title=='Teaching/Mentoring Experience':
@@ -52,9 +52,12 @@ def tex_section_sorter(section, title, index):
 def tex_pub_sorter(entry):
     """Format publication list item"""
     if entry['doi'] and entry['url']:
-        return '%s, \\textit{%s}, %s, %s, \href{%s}{%s}'%(entry['authors'], entry['title'], entry['journal'], entry['year'], entry['url'], entry['doi'])
+        return '%s, \\textit{%s}, %s, %s, \href{%s}{%s}'%(author_filter(entry['authors'], tex=True),
+                                                          entry['title'], entry['journal'],
+                                                          entry['year'], entry['url'], entry['doi'])
     else:
-        return '%s, \\textit{%s}, %s, %s'%(entry['authors'], entry['title'], entry['journal'], entry['year'])
+        return '%s, \\textit{%s}, %s, %s'%(author_filter(entry['authors'], tex=True), entry['title'],
+                                           entry['journal'], entry['year'])
 
 
 def md_section_sorter(entry, title):
@@ -83,25 +86,28 @@ def html_section_sorter(entry, title):
     Format HTML sections for different types
     """
     if title == 'Education':
-        return_str = '{}, {} / {} '.format(entry['degree'], entry['dates'], entry['school'])
-        if entry['cvlistitems']:
-            return_str += ' / ' + ' / '.join([item for item in entry['cvlistitems']])
-    elif title == 'Talks and Posters':
+        return_str = '<strong>{}</strong> {}<span class="pull-right">{}, <em>{}</em></span>'.format(entry['school'], entry['location'], entry['degree'], entry['dates'])
+    elif title == 'Talks':
         if entry['url']:
             pub_title = '<a href="{}"><em>{}</em></a>'.format(entry['url'], entry['title'])
         else:
             pub_title = '<em>{}</em>'.format(entry['title'])
-        return_str = '<strong>{}</strong>: {} / {} / {} / {} / {}'.format(entry['type'], pub_title,
-                                                                          entry['event'],
-                                                                          entry['institution'],
-                                                                          entry['location'],
-                                                                          entry['dates'])
+        return_str = '{} <span class="pull-right">{}</span><br>{}, {}'.format(pub_title, entry['dates'], entry['event'], entry['location'])
     elif title == 'Publications':
-        return_str = '{}, <em>{}</em>, {}, {}'.format(entry['authors'], entry['title'],
-                                                      entry['journal'], entry['year'])
+        return_str = '<em>{}</em><br>{}, {} {}'.format(entry['title'],
+                                                       author_filter(entry['authors']),
+                                                       entry['journal'], entry['year'])
         if entry['url'] and entry['doi']:
             return_str += ', <a href="{}"><em>{}</em></a>'.format(entry['url'], entry['doi'])
     else:
         logging.error('Unrecognized title: {}'.format(title))
 
     return return_str
+
+
+def author_filter(authors, tex=False):
+    """
+    Filter author list
+    """
+    bold = '\\textbf{{{}}}' if tex else '<strong>{}</strong>'
+    return ', '.join([bold.format(a) if a == 'W.T. Barnes' else a for a in authors])

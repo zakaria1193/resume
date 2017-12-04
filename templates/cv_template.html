@@ -1,18 +1,18 @@
 {% for section in db.sections %}
-{% if section.title=='Education' or section.title=='Computing Skills' or section.title=='Publications' or section.title=='Talks and Posters'%}
+{% if section.title=='Education' or section.title=='Software and Computing Skills' or section.title=='Publications' or section.title=='Talks'%}
 <h2>{{ section.title }}</h2>
 <ul>
 {% if section.cvitems %}
 {% for item in section.cvitems %}
-<li class="lead">{{ item.name }}: {{ item.value }}</li>
+<li class="list-unstyled lead"><strong>{{ item.name }}:</strong> {{ item.value }}</li>
 {% endfor %}
 {% elif section.cvlistitems %}
 {% for item in section.cvlistitems %}
-<li class="lead">{ item }}</li>
+<li class="lead">{{ item }}</li>
 {% endfor %}
 {% else %}
 {% for entry in section.entries %}
-<li class="lead">{{ entry | html_section_sorter(section.title) }}</li>
+<li class="{% if section.title == 'Education' %}list-unstyled{% endif %} lead">{{ entry | html_section_sorter(section.title) }}</li>
 {% endfor %}
 {% endif %}
 </ul>
