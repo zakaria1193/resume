@@ -43,31 +43,37 @@ sections:
       - "Thesis: Astrophysical Applications of Dusty Plasma Physics, Advisor: Lorin Matthews, Ph.D."
       - University Honors Program, Magna Cum Laude, Phi Beta Kappa
       - "Minors: Mathematics, Great Texts of the Western Tradition"
-- title: Computing Skills
+- title: Software and Computing Skills
   cvitems:
   - name: Languages
     value: Bash, C, C++, Python
   - name: Scientific Computing
     value: IDL, Mathematica, MATLAB, NumPy, SciPy, SLURM, TORQUE
   - name: Markup
-    value: CSS, HTML, LaTeX, markdown, reStructuredText
-  - name: DevOps
-    value: git/GitHub, Travis CI, Sphinx
+    value:  CSS, HTML, LaTeX, markdown, reStructuredText
+  - name: Other
+    value: continuous integration, documentation, testing, version control
 - title: Publications
   entries:
   - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores II. Nanoflare Trains
-    authors: W.T. Barnes, P.J. Cargill, and S.J. Bradshaw
+    authors: 
+    - W.T. Barnes
+    - P.J. Cargill
+    - S.J. Bradshaw
     journal: ApJ
     year: 2016
     doi: 2016ApJ...833..217B
     url: "http://adsabs.harvard.edu/abs/2016ApJ...833..217B"
   - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores I. Single Nanoflares
-    authors: W.T. Barnes, P.J. Cargill, and S.J. Bradshaw
+    authors:
+    - W.T. Barnes
+    - P.J. Cargill
+    - S.J. Bradshaw
     journal: ApJ
     year: 2016
     doi: 2016ApJ...829...31B
     url: "http://adsabs.harvard.edu/abs/2016ApJ...829...31B"
-- title: Talks and Posters
+- title: Posters
   entries:
   - dates: 9-10 October 2017
     location: Houston, TX
@@ -83,27 +89,6 @@ sections:
     title: "Modeling Observable Signatures of Nanoflare Heating Frequency in Active Region Cores"
     url: "http://shinecon.org/shine2017/ViewAbstract.php?idabs=80"
     institution: National Science Foundation
-  - dates: 10-16 July 2017
-    location: Austin, TX
-    type: Talk
-    event: "SciPy: Scientific Computing in Python"
-    title: "ChiantiPy: a Python package for Astrophysical Spectroscopy"
-    url: "https://youtu.be/79ledxbnrPU"
-    institution: SciPy, Enthought
-  - dates: 27-30 June 2017
-    location: Palermo, Italy
-    event: Coronal Loops Workshop VIII
-    type: Talk
-    title: Constraining Nanoflare Heating Frequency with a Global Active Region Model
-    url: "https://wtbarnes.github.io/loops-workshop-2017-talk/"
-    institution: INAF IASF Palermo
-  - dates: 27 February 2017
-    location: Houston, TX
-    type: Talk
-    event: Space Physics Seminar Series
-    institution: Rice University
-    title: A Framework for Forward Modeling Solar Active Regions
-    url: 
   - dates: 11-15 July 2016
     location: Santa Fe, NM
     type: Poster
@@ -111,20 +96,6 @@ sections:
     event: Solar Heliospheric and Interplanetary Environment (SHINE) Workshop
     title: Understanding the Impact of Nanoflare Heating Frequency on the Observed Emission Measure Distribution
     url: "http://shinecon.org/shine2016/ViewAbstract.php?idabs=132"
-  - dates: 31 May-3 June 2016
-    location: Boulder, CO
-    type: Talk
-    institution: American Astronomical Society
-    event: 47th Annual Solar Physics Division Meeting
-    title: Hot Non-flaring Plasmas in Active Region Cores Heated by Single Nanoflares
-    url: "http://adsabs.harvard.edu/abs/2016SPD....4720203B"
-  - dates: 9 November 2015
-    location: Houston, TX
-    type: Talk
-    institution: Rice University
-    event: Space Physics Seminar Series
-    title: Impacts of Two-fluid Effects on Emission from Impulsively Heated Coronal Loops
-    url:
   - dates: 21-23 July 2015
     location: Cambridge, UK
     type: Poster
@@ -146,6 +117,43 @@ sections:
     event: 44th Annual Lunar and Planetary Science Conference
     title: "Dust Grain Growth in a Protoplanetary Disk: Effects of Location on Charge and Size"
     url: "http://adsabs.harvard.edu/abs/2013LPI....44.1897B"
+- title: Talks
+  entries:
+  - dates: 10-16 July 2017
+    location: Austin, TX
+    type: Talk
+    event: "SciPy: Scientific Computing in Python"
+    title: "ChiantiPy: a Python package for Astrophysical Spectroscopy"
+    url: "https://youtu.be/79ledxbnrPU"
+    institution: SciPy, Enthought
+  - dates: 27-30 June 2017
+    location: Palermo, Italy
+    event: Coronal Loops Workshop VIII
+    type: Talk
+    title: Constraining Nanoflare Heating Frequency with a Global Active Region Model
+    url: "https://wtbarnes.github.io/loops-workshop-2017-talk/"
+    institution: INAF IASF Palermo
+  - dates: 27 February 2017
+    location: Houston, TX
+    type: Talk
+    event: Space Physics Seminar Series
+    institution: Rice University
+    title: A Framework for Forward Modeling Solar Active Regions
+    url: 
+  - dates: 31 May-3 June 2016
+    location: Boulder, CO
+    type: Talk
+    institution: American Astronomical Society
+    event: 47th Annual Solar Physics Division Meeting
+    title: Hot Non-flaring Plasmas in Active Region Cores Heated by Single Nanoflares
+    url: "http://adsabs.harvard.edu/abs/2016SPD....4720203B"
+  - dates: 9 November 2015
+    location: Houston, TX
+    type: Talk
+    institution: Rice University
+    event: Space Physics Seminar Series
+    title: Impacts of Two-fluid Effects on Emission from Impulsively Heated Coronal Loops
+    url:
   - dates: 14 September 2012
     location: College Station, TX
     type: Talk
@@ -160,21 +168,19 @@ sections:
     location: Houston, TX USA
     dates: 2013--present
     advisor: Stephen Bradshaw, Ph.D.
-    description: Research assistant in space physics division of the Department of Physics and Astronomy, Rice University. Research duties concentrated in computational solar physics. Teaching duties include, but are not limited to, a minimum of four semesters of leading lab sections of introductory physics.
+    description: Research duties concentrated in computational solar physics. Teaching duties include, but are not limited to, a minimum of four semesters of leading lab sections of introductory physics.
   - title: NSF REU Research Fellow
     institution: CASPER, Baylor University
     location: Waco, TX USA
     dates: June 2012--August 2012
     advisor: Lorin Matthews, Ph.D.
-    description: Accepted to National Science Foundation Research Experience for Undergraduates program in the Center for Astrophysics, Space Physics, and Engineering Research, Baylor University. Studied the effects of dust grain charging on aggregate size in a protoplanetary disk. Numerical work in extending kinetic model of grain growth to examine effect of disk location on grain charging.
+    description: Studied the effects of dust grain charging on aggregate size in a protoplanetary disk. Numerical work in extending kinetic model of grain growth to examine effect of disk location on grain charging.
   - title: Summer Undergraduate Research Assistant
     institution: Baylor University
     location: Waco, TX USA
     dates: June 2011--August 2011
     advisor: Lorin Matthews, Ph.D.
     description: Awarded a Summer Undergraduate Research in Physics (SURPh) grant from Department of Physics, Baylor University. Conducted research on anomalies in Saturn's F Ring by improving numerical models that simulate perturbed orbits of charged dust grains in a plasma environment.
-- title: Research Interests
-  description: Broadly, my research interests are in solar physics, specifically in the numerical modeling of plasma dynamics in the solar corona. I am interested in using hydrodynamic models to study nanoflare heating in the corona and how these modeled results can be compared to observations from instruments. Additionally, I am interested in using forward modeling to explore how novel machine learning techniques might be used to extract heating properties from active region core emission.
 - title: Honors and Awards
   cvlistitems:
   - Outstanding Student Poster Award, SHINE Workshop, July 2017
@@ -195,7 +201,7 @@ sections:
     - dates: May-August 2016
       title: Mentor, The SunPy Project
       class: Google Summer of Code, Open Astronomy
-      description: Mentored an undergraduate student to develop a module in SunPy to calculate the temperature response functions for the AIA instrument on the Solar Dynamics Observatory. SunPy is a community-developed, free and open-source solar data analysis environment for Python.
+      description: Mentored undergraduate student in developing a module to calculate the temperature response functions for the AIA instrument on the Solar Dynamics Observatory. SunPy is a community-developed, free and open-source solar data analysis environment for Python.
     - dates: Spring 2014, Spring 2015
       title: Lab Teaching Assistant
       class: "PHYS 102: Electricity and Magnetism"
