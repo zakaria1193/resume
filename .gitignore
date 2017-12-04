@@ -1,3 +1,6 @@
+# ignore any PDFs
+*.pdf
+
 # ignore default output directory
 output/*
 
