@@ -18,7 +18,7 @@
   \makecvtitle
   ((= Iterate through sections =))
   ((* for section in db.sections *))
-  ((* if section.title != 'Personal Information' and section.title != 'Research Interests' and section.title != 'Societies and Associations' and section.title != 'Computing Skills' and section.title != 'Employment Experience'*))
+  ((* if section.title != 'Personal Information' and section.title != 'Societies and Associations' and section.title != 'Software and Computing Skills' and section.title != 'Employment Experience' and section.title != 'Research Positions' *))
   \section{((( section.title )))}
   ((= Simple lists with two entries =))
   ((* if section.cvitems *))
@@ -27,7 +27,7 @@
   ((* endfor *))
   ((= Simple lists with one entry =))
   ((* elif section.cvlistitems *))
-  ((* for item in section.cvlistitems *))
+  ((* for item in section.cvlistitems | shorten_list(4) *))
   \cvlistitem{((( item|escape_tex )))}
   ((* endfor *))
   ((= Single description, no formatting needed =))

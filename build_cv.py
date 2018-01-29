@@ -83,6 +83,6 @@ if __name__ == '__main__':
                          md_template=args.md_template, tex_template=args.tex_template)
     cv_builder.config_jinja_env(filters=[filters.escape_tex, filters.tex_section_sorter, 
                                          filters.tex_pub_sorter, filters.md_section_sorter,
-                                         filters.html_section_sorter])
+                                         filters.html_section_sorter, filters.shorten_list])
     cv_builder.write_tex_cv()
     cv_builder.write_md_cv(pdf_link=args.pdf_link)

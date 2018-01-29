@@ -73,7 +73,7 @@ sections:
     year: 2016
     doi: 2016ApJ...829...31B
     url: "http://adsabs.harvard.edu/abs/2016ApJ...829...31B"
-- title: Posters
+- title: Conference Papers and Posters
   entries:
   - dates: 9-10 October 2017
     location: Houston, TX
@@ -89,6 +89,12 @@ sections:
     title: "Modeling Observable Signatures of Nanoflare Heating Frequency in Active Region Cores"
     url: "http://shinecon.org/shine2017/ViewAbstract.php?idabs=80"
     institution: National Science Foundation
+  - dates: 10-16 July 2017
+    location: Austin, TX
+    event: "SciPy: Scientific Computing in Python"
+    institution: SciPy
+    title: "ChiantiPy: a Python package for Astrophysical Spectroscopy"
+    url: http://conference.scipy.org/proceedings/scipy2017/will_barnes.html
   - dates: 11-15 July 2016
     location: Santa Fe, NM
     type: Poster
@@ -100,7 +106,7 @@ sections:
     location: Cambridge, UK
     type: Poster
     institution: Unversity of Cambridge
-    event: Coronal Loop Workshop VII
+    event: Coronal Loops Workshop VII
     title: Effects of Ion Heating on Emission Measure of Coronal Loops in Active Region Cores
     url:
   - dates: 26-30 April 2015
@@ -192,16 +198,20 @@ sections:
   - President's Gold Scholarship (GPA of at least 3.0, 12 semester hours), Baylor University, all semesters
   - Gordon K. Teal Scholarship, Dept. of Physics, Baylor University, 2 academic years
   - Herbert D. Schwetman Scholarship, Dept. of Physics, Baylor University, 2 academic years
-- title: Teaching/Mentoring Experience
+- title: Students Mentored
+  cvitems:
+  - name: Lily Han
+    value: Undergraduate (Rice), Assist in advising undergraduate thesis work, October 2017-present
+  - name: Brandon Wang
+    value: High school intern, Advisor for STEM research course, April 2017-present 
+  - name: Tessa Wilkinson
+    value: Undergraduate, Google Summer of Code mentor (the SunPy project), May-August 2016
+- title: Teaching Experience
   entries:
     - dates: Spring 2017
       title: Guest Lecturer
       class: "ASTR 201: Stars, Galaxies, and the Universe"
       description: Gave two guest lectures for non-majors astronomy course of approximately 70 undergraduate students. Topics covered included eclipses, phases of the moon, and the celestial sphere.
-    - dates: May-August 2016
-      title: Mentor, The SunPy Project
-      class: Google Summer of Code, Open Astronomy
-      description: Mentored undergraduate student in developing a module to calculate the temperature response functions for the AIA instrument on the Solar Dynamics Observatory. SunPy is a community-developed, free and open-source solar data analysis environment for Python.
     - dates: Spring 2014, Spring 2015
       title: Lab Teaching Assistant
       class: "PHYS 102: Electricity and Magnetism"

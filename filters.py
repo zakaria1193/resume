@@ -28,20 +28,20 @@ def escape_tex(value):
 
 def tex_section_sorter(section, title, index):
     """Change format based on section. Customized for my specific setup"""
-    cv_listitem_format = '\cvlistitem{%s}'
-    if title=='Education':
-        return_list =  [section['dates'], section['degree'], section['school'], section['location'], section['gpa'] if section['gpa'] else '','']
+    cv_listitem_format = '\cvlistitem{{{}}}'
+    if title == 'Education':
+        return_list =  [section['dates'], section['degree'], section['school'], section['location'], section['gpa'] if section['gpa'] else '', '']
         if section['cvlistitems']:
-            return_list[-1] = '\n'.join([cv_listitem_format%(i) for i in section['cvlistitems']])
-    elif title == 'Talks' or title == 'Posters':
-        return_list = [section['dates'], section['institution'], section['event'], section['location'],'','\\textit{%s}'%(section['title'])]
+            return_list[-1] = '\n'.join([cv_listitem_format.format(i) for i in section['cvlistitems']])
+    elif title == 'Talks' or title == 'Conference Papers and Posters':
+        return_list = [section['dates'], section['institution'], section['event'], section['location'], '', f'\\textit{{{section["title"]}}}']
         if section['url']:
-            return_list[-1] = '\href{%s}{%s}'%(section['url'],'\\textit{%s}'%(section['title']))
-    elif title=='Research Positions':
-        return_list = [section['dates'], section['title'], section['institution'], section['location'],'',section['description']]
-    elif title=='Teaching/Mentoring Experience':
+            return_list[-1] = f'\href{{{section["url"]}}}{{\\textit{{{section["title"]}}}}}'
+    elif title == 'Research Positions':
+        return_list = [section['dates'], section['title'], section['institution'], section['location'], '', section['description']]
+    elif title == 'Teaching Experience':
         return_list = [section['dates'], section['title'], section['class'], '', '', section['description']]
-    elif title=='Societies and Associations' or title=='Employment Experience':
+    elif title == 'Societies and Associations' or title=='Employment Experience':
         return_list = [section['dates'], section['title'], section['org'], '', '', section['description']]
     else:
         logging.error('Unrecognized title: %s'%(title))
@@ -66,11 +66,11 @@ def md_section_sorter(entry, title):
         return_str = '%s, %s / %s '%(entry['degree'], entry['dates'], entry['school'])
         if entry['cvlistitems']:
             return_str += ' / ' + ' / '.join([item for item in entry['cvlistitems']])
-    elif title == 'Talks and Posters':
+    elif title == 'Talks' or title == 'Conference Papers and Posters':
         if entry['url']:
-            return_str = '%s: [*%s*](%s) / %s / %s / %s / %s'%(entry['type'], entry['title'], entry['url'], entry['event'], entry['institution'], entry['location'], entry['dates'])
+            return_str = f'[*{entry["title"]}*]({entry["url"]}) / {entry["event"]} / {entry["institution"]} / {entry["location"]} / {entry["dates"]}'
         else:
-            return_str = '%s: *%s* / %s / %s / %s / %s'%(entry['type'], entry['title'], entry['event'], entry['institution'], entry['location'], entry['dates'])
+            return_str = f'*{entry["title"]}* / {entry["event"]} / {entry["institution"]} / {entry["location"]} / {entry["dates"]}'
     elif title == 'Publications':
         return_str = '%s, *%s*, %s, %s'%(entry['authors'], entry['title'], entry['journal'], entry['year'])
         if entry['url'] and entry['doi']:
@@ -111,3 +111,7 @@ def author_filter(authors, tex=False):
     """
     bold = '\\textbf{{{}}}' if tex else '<strong>{}</strong>'
     return ', '.join([bold.format(a) if a == 'W.T. Barnes' else a for a in authors])
+
+
+def shorten_list(list, max_length):
+    return list[:max_length]
