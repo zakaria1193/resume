@@ -18,11 +18,13 @@ class BuildCV(object):
     def __init__(self, yaml_config_file, md_template='cv_template.md', tex_template='cv_template.tex',
                  md_out_file=None, tex_out_file=None):
         self.tex_out_file = tex_out_file
-        if not os.path.exists(os.path.dirname(self.tex_out_file)):
-            os.mkdir(os.path.dirname(self.tex_out_file))
+        if self.tex_out_file is not None:
+            if not os.path.exists(os.path.dirname(self.tex_out_file)):
+                os.mkdir(os.path.dirname(self.tex_out_file))
         self.md_out_file = md_out_file
-        if not os.path.exists(os.path.dirname(self.md_out_file)):
-            os.mkdir(os.path.dirname(self.md_out_file))
+        if self.md_out_file is not None:
+            if not os.path.exists(os.path.dirname(self.md_out_file)):
+                os.mkdir(os.path.dirname(self.md_out_file))
         self.tex_template = tex_template
         self.md_template = md_template
         self.logger = logging.getLogger(type(self).__name__)
