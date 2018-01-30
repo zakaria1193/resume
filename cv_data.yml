@@ -23,7 +23,7 @@ sections:
   - school: Rice University
     degree: Ph.D. Physics
     location: Houston, TX USA
-    dates: 2016-present (expected 2018)
+    dates: 2016-present (expected 2019)
     gpa:
     cvlistitems:
       - "Thesis: Modeling Hot Plasma in the Solar Corona (working title)"
@@ -43,16 +43,26 @@ sections:
       - "Thesis: Astrophysical Applications of Dusty Plasma Physics, Advisor: Lorin Matthews, Ph.D."
       - University Honors Program, Magna Cum Laude, Phi Beta Kappa
       - "Minors: Mathematics, Great Texts of the Western Tradition"
-- title: Software and Computing Skills
-  cvitems:
-  - name: Languages
-    value: Bash, C, C++, Python
-  - name: Scientific Computing
-    value: IDL, Mathematica, MATLAB, NumPy, SciPy, SLURM, TORQUE
-  - name: Markup
-    value:  CSS, HTML, LaTeX, markdown, reStructuredText
-  - name: Other
-    value: continuous integration, documentation, testing, version control
+- title: Research Positions
+  entries:
+  - title: Graduate Research Assistant
+    institution: Rice University, Dept. of Physics and Astronomy
+    location: Houston, TX USA
+    dates: 2013--present
+    advisor: Stephen Bradshaw, Ph.D.
+    description: Graduate research assistant studying observable signatures of impulsive heating in the solar corona
+  - title: NSF REU Research Fellow
+    institution: CASPER, Baylor University
+    location: Waco, TX USA
+    dates: June 2012--August 2012
+    advisor: Lorin Matthews, Ph.D.
+    description: Received NSF REU fellowship to study dust grain charging and growth in protoplanetary disks using numerical models.
+  - title: Summer Undergraduate Research Assistant
+    institution: Baylor University, Dept. of Physics
+    location: Waco, TX USA
+    dates: June 2011--August 2011
+    advisor: Lorin Matthews, Ph.D.
+    description: Awarded summer research funding to investigate plasma physics of charged dust grains in Saturn's F Ring
 - title: Publications
   entries:
   - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores II. Nanoflare Trains
@@ -73,6 +83,50 @@ sections:
     year: 2016
     doi: 2016ApJ...829...31B
     url: "http://adsabs.harvard.edu/abs/2016ApJ...829...31B"
+- title: Talks
+  entries:
+  - dates: 10-16 July 2017
+    location: Austin, TX
+    type: Talk
+    event: "SciPy: Scientific Computing in Python"
+    title: "ChiantiPy: a Python package for Astrophysical Spectroscopy"
+    url: "https://youtu.be/79ledxbnrPU"
+    institution: SciPy, Enthought
+  - dates: 27-30 June 2017
+    location: Palermo, Italy
+    event: Coronal Loops Workshop VIII
+    type: Talk
+    title: Constraining Nanoflare Heating Frequency with a Global Active Region Model
+    url: "https://wtbarnes.github.io/loops-workshop-2017-talk/"
+    institution: INAF IASF Palermo
+  - dates: 27 February 2017
+    location: Houston, TX
+    type: Talk
+    event: Space Physics Seminar Series
+    institution: Rice University
+    title: A Framework for Forward Modeling Solar Active Regions
+    url: 
+  - dates: 31 May-3 June 2016
+    location: Boulder, CO
+    type: Talk
+    institution: American Astronomical Society
+    event: 47th Annual Solar Physics Division Meeting
+    title: Hot Non-flaring Plasmas in Active Region Cores Heated by Single Nanoflares
+    url: "http://adsabs.harvard.edu/abs/2016SPD....4720203B"
+  - dates: 9 November 2015
+    location: Houston, TX
+    type: Talk
+    institution: Rice University
+    event: Space Physics Seminar Series
+    title: Impacts of Two-fluid Effects on Emission from Impulsively Heated Coronal Loops
+    url:
+  - dates: 14 September 2012
+    location: College Station, TX
+    type: Talk
+    institution: Texas A&M University
+    event: Texas Undergraduate Astronomy Research Symposium
+    title: Dust Grain Charging in a Protoplanetary Disk
+    url:
 - title: Conference Papers and Posters
   entries:
   - dates: 9-10 October 2017
@@ -123,87 +177,22 @@ sections:
     event: 44th Annual Lunar and Planetary Science Conference
     title: "Dust Grain Growth in a Protoplanetary Disk: Effects of Location on Charge and Size"
     url: "http://adsabs.harvard.edu/abs/2013LPI....44.1897B"
-- title: Talks
-  entries:
-  - dates: 10-16 July 2017
-    location: Austin, TX
-    type: Talk
-    event: "SciPy: Scientific Computing in Python"
-    title: "ChiantiPy: a Python package for Astrophysical Spectroscopy"
-    url: "https://youtu.be/79ledxbnrPU"
-    institution: SciPy, Enthought
-  - dates: 27-30 June 2017
-    location: Palermo, Italy
-    event: Coronal Loops Workshop VIII
-    type: Talk
-    title: Constraining Nanoflare Heating Frequency with a Global Active Region Model
-    url: "https://wtbarnes.github.io/loops-workshop-2017-talk/"
-    institution: INAF IASF Palermo
-  - dates: 27 February 2017
-    location: Houston, TX
-    type: Talk
-    event: Space Physics Seminar Series
-    institution: Rice University
-    title: A Framework for Forward Modeling Solar Active Regions
-    url: 
-  - dates: 31 May-3 June 2016
-    location: Boulder, CO
-    type: Talk
-    institution: American Astronomical Society
-    event: 47th Annual Solar Physics Division Meeting
-    title: Hot Non-flaring Plasmas in Active Region Cores Heated by Single Nanoflares
-    url: "http://adsabs.harvard.edu/abs/2016SPD....4720203B"
-  - dates: 9 November 2015
-    location: Houston, TX
-    type: Talk
-    institution: Rice University
-    event: Space Physics Seminar Series
-    title: Impacts of Two-fluid Effects on Emission from Impulsively Heated Coronal Loops
-    url:
-  - dates: 14 September 2012
-    location: College Station, TX
-    type: Talk
-    institution: Texas A&M University
-    event: Texas Undergraduate Astronomy Research Symposium
-    title: Dust Grain Charging in a Protoplanetary Disk
-    url:
-- title: Research Positions
-  entries:
-  - title: Graduate Research Assistant
-    institution: Rice University
-    location: Houston, TX USA
-    dates: 2013--present
-    advisor: Stephen Bradshaw, Ph.D.
-    description: Research duties concentrated in computational solar physics. Teaching duties include, but are not limited to, a minimum of four semesters of leading lab sections of introductory physics.
-  - title: NSF REU Research Fellow
-    institution: CASPER, Baylor University
-    location: Waco, TX USA
-    dates: June 2012--August 2012
-    advisor: Lorin Matthews, Ph.D.
-    description: Studied the effects of dust grain charging on aggregate size in a protoplanetary disk. Numerical work in extending kinetic model of grain growth to examine effect of disk location on grain charging.
-  - title: Summer Undergraduate Research Assistant
-    institution: Baylor University
-    location: Waco, TX USA
-    dates: June 2011--August 2011
-    advisor: Lorin Matthews, Ph.D.
-    description: Awarded a Summer Undergraduate Research in Physics (SURPh) grant from Department of Physics, Baylor University. Conducted research on anomalies in Saturn's F Ring by improving numerical models that simulate perturbed orbits of charged dust grains in a plasma environment.
-- title: Honors and Awards
-  cvlistitems:
-  - Outstanding Student Poster Award, SHINE Workshop, July 2017
-  - William and Elva Gordon Fellowship, Rice University, May 2016
-  - Chuoke Award for Second- and Third-year Graduate Students, Rice University, May 2016
-  - Studentship Travel Award for 2015,2016 SPD Annual Meetings, Solar Physics Division of the AAS
-  - URSA Scholars Week Outstanding Research Poster in Physics, Baylor University, 2013
-  - Dean's List, Baylor University, 7 of 8 semesters
-  - President's Gold Scholarship (GPA of at least 3.0, 12 semester hours), Baylor University, all semesters
-  - Gordon K. Teal Scholarship, Dept. of Physics, Baylor University, 2 academic years
-  - Herbert D. Schwetman Scholarship, Dept. of Physics, Baylor University, 2 academic years
+- title: Software and Computing Skills
+  cvitems:
+  - name: Languages
+    value: Bash, C, C++, Python
+  - name: Scientific Computing
+    value: IDL, Mathematica, MATLAB, NumPy, SciPy, SLURM, TORQUE
+  - name: Markup
+    value:  CSS, HTML, LaTeX, markdown, reStructuredText
+  - name: Other
+    value: continuous integration, documentation, testing, version control
 - title: Students Mentored
   cvitems:
   - name: Lily Han
-    value: Undergraduate (Rice), Assist in advising undergraduate thesis work, October 2017-present
+    value: Undergraduate (Rice), assist in advising undergraduate thesis work, October 2017-present
   - name: Brandon Wang
-    value: High school intern, Advisor for STEM research course, April 2017-present 
+    value: High school intern, advisor for STEM research course, April 2017-present 
   - name: Tessa Wilkinson
     value: Undergraduate, Google Summer of Code mentor (the SunPy project), May-August 2016
 - title: Teaching Experience
@@ -220,6 +209,17 @@ sections:
       title: Lab Teaching Assistant
       class: "PHYS 101: Mechanics"
       description: Instructed lab sections of 40+ undergraduate students on topics including kinematics, collisions, and simple harmonic motion.
+- title: Honors and Awards
+  cvlistitems:
+  - Outstanding Student Poster Award, SHINE Workshop, July 2017
+  - William and Elva Gordon Fellowship, Rice University, May 2016
+  - Chuoke Award for Second- and Third-year Graduate Students, Rice University, May 2016
+  - Studentship Travel Award for 2015,2016 SPD Annual Meetings, Solar Physics Division of the AAS
+  - URSA Scholars Week Outstanding Research Poster in Physics, Baylor University, 2013
+  - Dean's List, Baylor University, 7 of 8 semesters
+  - President's Gold Scholarship (GPA of at least 3.0, 12 semester hours), Baylor University, all semesters
+  - Gordon K. Teal Scholarship, Dept. of Physics, Baylor University, 2 academic years
+  - Herbert D. Schwetman Scholarship, Dept. of Physics, Baylor University, 2 academic years
 - title: Societies and Associations
   entries:
   - title: National Honors Society
