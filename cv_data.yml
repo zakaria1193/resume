@@ -50,19 +50,19 @@ sections:
     location: Houston, TX USA
     dates: 2013--present
     advisor: Stephen Bradshaw, Ph.D.
-    description: Graduate research assistant studying observable signatures of impulsive heating in the solar corona
+    description: Graduate research assistant studying observable signatures of impulsive heating in the solar corona.
   - title: NSF REU Research Fellow
-    institution: CASPER, Baylor University
+    institution: Baylor University, CASPER
     location: Waco, TX USA
     dates: June 2012--August 2012
     advisor: Lorin Matthews, Ph.D.
     description: Received NSF REU fellowship to study dust grain charging and growth in protoplanetary disks using numerical models.
-  - title: Summer Undergraduate Research Assistant
+  - title: Undergraduate Research Assistant
     institution: Baylor University, Dept. of Physics
     location: Waco, TX USA
     dates: June 2011--August 2011
     advisor: Lorin Matthews, Ph.D.
-    description: Awarded summer research funding to investigate plasma physics of charged dust grains in Saturn's F Ring
+    description: Awarded summer research funding to investigate plasma physics of charged dust grains in Saturn's F Ring.
 - title: Publications
   entries:
   - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores II. Nanoflare Trains
