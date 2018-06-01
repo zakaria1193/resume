@@ -97,7 +97,7 @@ sections:
     type: Talk
     event: "Python in Astronomy 2018"
     title: "A Complete fiasco - The Difficulties of Dealing with Atomic Data and a Possible Pythonic Solution"
-    url:
+    url: "https://zenodo.org/record/1249002"
     institution: Center for Computational Astrophysics, The Flatiron Institute
   - dates: 10-16 July 2017
     location: Austin, TX
