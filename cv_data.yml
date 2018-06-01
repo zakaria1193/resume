@@ -43,7 +43,7 @@ sections:
       - "Thesis: Astrophysical Applications of Dusty Plasma Physics, Advisor: Lorin Matthews, Ph.D."
       - University Honors Program, Magna Cum Laude, Phi Beta Kappa
       - "Minors: Mathematics, Great Texts of the Western Tradition"
-- title: Research Positions
+- title: Research Experience
   entries:
   - title: Graduate Research Assistant
     institution: Rice University, Dept. of Physics and Astronomy
@@ -85,6 +85,20 @@ sections:
     url: "http://adsabs.harvard.edu/abs/2016ApJ...829...31B"
 - title: Talks
   entries:
+  - dates: 21-24 May 2018
+    location: Leesburg, VA
+    type: Talk
+    event: Triennial Earth-Sun Summit
+    title: "Timelag Analysis of Simulated Active Region Cores Heated by Nanoflares"
+    url:
+    institution: American Geophysical Union
+  - dates: 30 April-4 May 2018
+    location: New York City, NY
+    type: Talk
+    event: "Python in Astronomy 2018"
+    title: "A Complete fiasco - The Difficulties of Dealing with Atomic Data and a Possible Pythonic Solution"
+    url:
+    institution: Center for Computational Astrophysics, The Flatiron Institute
   - dates: 10-16 July 2017
     location: Austin, TX
     type: Talk
@@ -190,9 +204,9 @@ sections:
 - title: Students Mentored
   cvitems:
   - name: Lily Han
-    value: Undergraduate (Rice), assist in advising undergraduate thesis work, October 2017-present
+    value: Undergraduate (Rice), assisted in advising undergraduate thesis work, October 2017-April 2018
   - name: Brandon Wang
-    value: High school intern, advisor for STEM research course, April 2017-present 
+    value: High school intern, advisor for STEM research course, April 2017-May 2018
   - name: Tessa Wilkinson
     value: Undergraduate, Google Summer of Code mentor (the SunPy project), May-August 2016
 - title: Teaching Experience
@@ -214,10 +228,10 @@ sections:
   - Outstanding Student Poster Award, SHINE Workshop, July 2017
   - William and Elva Gordon Fellowship, Rice University, May 2016
   - Chuoke Award for Second- and Third-year Graduate Students, Rice University, May 2016
-  - Studentship Travel Award for 2015,2016 SPD Annual Meetings, Solar Physics Division of the AAS
+  - Studentship Travel Award for 2015,2016,2018 SPD Annual Meetings, Solar Physics Division of the AAS
   - URSA Scholars Week Outstanding Research Poster in Physics, Baylor University, 2013
   - Dean's List, Baylor University, 7 of 8 semesters
-  - President's Gold Scholarship (GPA of at least 3.0, 12 semester hours), Baylor University, all semesters
+  - President's Gold Scholarship, Baylor University, all semesters
   - Gordon K. Teal Scholarship, Dept. of Physics, Baylor University, 2 academic years
   - Herbert D. Schwetman Scholarship, Dept. of Physics, Baylor University, 2 academic years
 - title: Societies and Associations
