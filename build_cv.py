@@ -15,55 +15,61 @@ class BuildCV(object):
     Build markdown and tex files of CV from YAML using jinja templates
     """
 
-    def __init__(self, yaml_config_file, md_template=None, tex_template=None, filters=None):
-        self.tex_template = tex_template
-        self.md_template = md_template
+    def __init__(self, yaml_config_file, filters=None, templates=None):
         self.filters = filters
         with open(yaml_config_file, 'r') as f:
-            self.yaml_obj = yaml.load(f)
+            self.data = yaml.load(f)
+        templates = {} if templates is None else templates
+        self.loader = jinja2.loaders.DictLoader(templates)
 
     @property
-    def jenv_md(self,):
+    def jenv(self,):
         """
         Set up markdown/HTML environment
         """
-        jenv_md = jinja2.Environment(loader=jinja2.FileSystemLoader(
-                os.path.join(os.path.dirname(os.path.realpath(__file__)), 'templates')))
+        loader = jinja2.loaders.ChoiceLoader([
+            self.loader,
+            jinja2.FileSystemLoader(
+                os.path.join(os.path.dirname(os.path.realpath(__file__)), 'templates'))
+        ])
+        jenv = jinja2.Environment(loader=loader)
         for f in self.filters:
-            jenv_md.filters[f.__name__] = f
-        return jenv_md
+            jenv.filters[f.__name__] = f
+        return jenv
 
     @property
     def jenv_tex(self,):
         """
         Set up TeX environment
         """
-        jenv_tex = jinja2.Environment(
-            loader=jinja2.FileSystemLoader(
-                os.path.join(os.path.dirname(os.path.realpath(__file__)), 'templates')))
+        loader = jinja2.ChoiceLoader([
+            self.loader,
+            jinja2.FileSystemLoader(
+                os.path.join(os.path.dirname(os.path.realpath(__file__)), 'templates'))
+        ])
+        jenv = jinja2.Environment(loader=loader)
         # define new delimiters to avoid TeX conflicts
-        jenv_tex.block_start_string = '((*'
-        jenv_tex.block_end_string = '*))'
-        jenv_tex.variable_start_string = '((('
-        jenv_tex.variable_end_string = ')))'
-        jenv_tex.comment_start_string = '((='
-        jenv_tex.comment_end_string = '=))'
+        jenv.block_start_string = '((*'
+        jenv.block_end_string = '*))'
+        jenv.variable_start_string = '((('
+        jenv.variable_end_string = ')))'
+        jenv.comment_start_string = '((='
+        jenv.comment_end_string = '=))'
         for f in self.filters:
-            jenv_tex.filters[f.__name__] = f
-        return jenv_tex
+            jenv.filters[f.__name__] = f
+        return jenv
 
-    def write_tex_cv(self, out_file, moderncv_color='black', moderncv_style='banking'):
-        """Write TeX CV with jinja template"""
-        template = self.jenv_tex.get_template(self.tex_template)
-        with open(out_file, 'w') as f:
-            f.write(template.render(moderncv_color=moderncv_color,
-                                    moderncv_style=moderncv_style, db=self.yaml_obj))
+    def tex_cv(self, **kwargs):
+        return self.jenv_tex.get_template("cv.tex").render(
+            data=self.data, **kwargs)
 
-    def write_md_cv(self, out_file, pdf_link=None):
-        """Write markdown/HTML CV with jinja template"""
-        template = self.jenv_md.get_template(self.md_template)
-        with open(out_file, 'w') as f:
-            f.write(template.render(db=self.yaml_obj, pdf_link=pdf_link))
+    def markdown_cv(self, pdf_link=None):
+        return self.jenv.get_template("cv.md").render(
+            data=self.data, pdf_link=pdf_link)
+
+    def html_cv(self, pdf_link=None):
+        return self.jenv.get_template("cv.html").render(
+            data=self.data, pdf_link=pdf_link)
 
 
 if __name__ == '__main__':
@@ -72,18 +78,29 @@ if __name__ == '__main__':
     cur_dir = os.path.dirname(os.path.realpath(__file__))
     parser.add_argument("--cv_data", help="YAML config file containing all CV data",
                         default=os.path.join(cur_dir, 'cv_data.yml'))
-    parser.add_argument("--md_template", help="Markdown/HTML template")
-    parser.add_argument("--tex_template", help="TeX template")
-    parser.add_argument("--md_out_file", help="where to write tex version of CV to")
-    parser.add_argument("--tex_out_file", help="where to write markdown version of CV to")
+    parser.add_argument("--md_out_file", help="where to write markdown version of CV")
+    parser.add_argument("--html_out_file", help="where to write HTML version of CV")
+    parser.add_argument("--tex_out_file", help="where to write TeX version of CV")
     parser.add_argument("--pdf_link", help="where to link to PDF version of CV")
     args = parser.parse_args()
     # build cv
-    filters = [filters.escape_tex, filters.tex_section_sorter, filters.tex_pub_sorter,
-               filters.md_section_sorter, filters.html_section_sorter, filters.shorten_list]
-    cv_builder = BuildCV(args.cv_data, md_template=args.md_template, tex_template=args.tex_template,
-                         filters=filters)
+    filters = [filters.escape_tex,
+               filters.tex_section_sorter,
+               filters.tex_pub_sorter,
+               filters.md_section_sorter,
+               filters.html_section_sorter,
+               filters.shorten_list,
+               filters.select_by_attr_name,
+               filters.to_cvlist,
+               filters.author_filter,
+               filters.doi_to_url]
+    cv = BuildCV(args.cv_data, filters=filters)
     if args.tex_out_file is not None:
-        cv_builder.write_tex_cv(args.tex_out_file)
+        with open(args.tex_out_file, 'w') as f:
+            f.write(cv.tex_cv(moderncv_color='black', moderncv_style='banking'))
     if args.md_out_file is not None:
-        cv_builder.write_md_cv(args.md_out_file, pdf_link=args.pdf_link)
+        with open(args.md_out_file, 'w') as f:
+            f.write(cv.markdown_cv(pdf_link=args.pdf_link))
+    if args.html_out_file is not None:
+        with open(args.html_out_file, 'w') as f:
+            f.write(cv.html_cv(pdf_link=args.pdf_link))

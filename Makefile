@@ -1,30 +1,28 @@
 PYTHON=python
-LATEX=pdflatex
+LATEX=xelatex
 OUTDIR=output
 
 all: html md pdf pdf-short
 
-html:
-	$(PYTHON) build_cv.py --md_template cv_template.html --md_out_file $(OUTDIR)/cv.html
+outdir:
+	mkdir -p $(OUTDIR)
 
-md:
-	$(PYTHON) build_cv.py --md_template cv_template.md --md_out_file $(OUTDIR)/cv.md
+install_tex: outdir
+	cp Awesome-CV/awesome-cv.cls $(OUTDIR)
+	cp Awesome-CV/fontawesome.sty $(OUTDIR)
+	cp -r Awesome-CV/fonts $(OUTDIR)
 
-tex:
-	$(PYTHON) build_cv.py --tex_template cv_template.tex --tex_out_file $(OUTDIR)/cv.tex
+html: outdir
+	$(PYTHON) build_cv.py --md_out_file $(OUTDIR)/cv.html
 
-tex-short:
-	$(PYTHON) build_cv.py --tex_template cv_template.proposal.tex --tex_out_file $(OUTDIR)/cv.short.tex
+md: outdir
+	$(PYTHON) build_cv.py --md_out_file $(OUTDIR)/cv.md
 
-pdf: tex
-	cd $(OUTDIR)
-	$(LATEX) $(OUTDIR)/cv.tex
-	cd ..
+tex: outdir
+	$(PYTHON) build_cv.py --tex_out_file $(OUTDIR)/cv.tex
 
-pdf-short: tex-short
-	cd $(OUTDIR)
-	$(LATEX) $(OUTDIR)/cv.short.tex
-	cd ..
+pdf: install_tex tex
+	cd $(OUTDIR); $(LATEX) cv.tex; cd ..
 
 clean:
-	rm $(OUTDIR)/*
+	rm -r $(OUTDIR)

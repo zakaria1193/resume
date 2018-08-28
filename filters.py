@@ -109,9 +109,33 @@ def author_filter(authors, tex=False):
     """
     Filter author list
     """
-    bold = '\\textbf{{{}}}' if tex else '<strong>{}</strong>'
+    bold = '\\underline{{{}}}' if tex else '<strong>{}</strong>'
     return ', '.join([bold.format(a) if a == 'W.T. Barnes' else a for a in authors])
 
 
-def shorten_list(list, max_length):
-    return list[:max_length]
+def shorten_list(array, max_length):
+    return array[:max_length]
+
+
+def select_by_attr_name(array, attr, value):
+    for d in array:
+        if d[attr] == value:
+            return d
+
+
+def to_cvlist(array):
+    return '\n'.join([f'\cvlistitem{{{i}}}' for i in array]) if array is not None else ''
+
+
+def doi_to_url(value, doi, bibcode, link_format='html'):
+    if not doi and not bibcode:
+        return value
+    link = f'https://doi.org/{doi}' if doi else f'http://adsabs.harvard.edu/abs/{bibcode}'
+    if link_format == 'html':
+        return f'< a href={link}>{value}</a>'
+    elif link_format == 'markdown':
+        return f'[{value}]({link})'
+    elif link_format == 'tex':
+        return f'\href{{{link}}}{{{value}}}'
+    else:
+        raise NotImplementedError(f'{link_format} links not implemented')
