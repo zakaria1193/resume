@@ -13,7 +13,7 @@ install_tex: outdir
 	cp -r Awesome-CV/fonts $(OUTDIR)
 
 html: outdir
-	$(PYTHON) build_cv.py --md_out_file $(OUTDIR)/cv.html
+	$(PYTHON) build_cv.py --html_out_file $(OUTDIR)/cv.html
 
 md: outdir
 	$(PYTHON) build_cv.py --md_out_file $(OUTDIR)/cv.md
