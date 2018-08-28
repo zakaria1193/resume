@@ -1,6 +1,7 @@
 preamble:
   name:
     first: Will
+    middle: Thomas
     last: Barnes
   address:
     street: 6100 Main Street MS-61
@@ -9,11 +10,14 @@ preamble:
   contact:
     phone: +1(405)308-0473
     mail: will.t.barnes@rice.edu
+    webpage: https://wtbarnes.github.io
     twitter: wtbarnes_
     github: wtbarnes
+  current:
+    role: Graduate Research Assistant
 sections:
 - title: Personal Information
-  cvitems:
+  entries:
   - name: Birthdate
     value: 15 October 1990
   - name: Citizenship
@@ -23,183 +27,184 @@ sections:
   - school: Rice University
     degree: Ph.D. Physics
     location: Houston, TX USA
-    dates: 2016-present (expected 2019)
+    dates: 2016-present (expected May 2019)
     gpa:
-    cvlistitems:
-      - "Thesis: Modeling Hot Plasma in the Solar Corona (working title)"
+    entries:
+      - "Thesis: Modeling Impulsive Heating in the Solar Corona (working title)"
       - "Advisor: Stephen Bradshaw, Ph.D."
   - school: Rice University
     degree: M.S. Physics
     location: Houston, TX USA
     gpa: "GPA: 3.88/4.00"
     dates: 2013-2016
-    cvlistitems:
   - school: Baylor University
     location: Waco, TX USA
     dates: 2009-2013
     gpa: "GPA: 3.89/4.00"
     degree: B.S. Astrophysics
-    cvlistitems:
+    entries:
       - "Thesis: Astrophysical Applications of Dusty Plasma Physics, Advisor: Lorin Matthews, Ph.D."
-      - University Honors Program, Magna Cum Laude, Phi Beta Kappa
+      - University Honors Program, Magna Cum Laude, Phi Beta Kappa, Dean's List
       - "Minors: Mathematics, Great Texts of the Western Tradition"
-- title: Research Experience
+- title: Research Fellowships
   entries:
-  - title: Graduate Research Assistant
-    institution: Rice University, Dept. of Physics and Astronomy
-    location: Houston, TX USA
-    dates: 2013--present
-    advisor: Stephen Bradshaw, Ph.D.
-    description: Graduate research assistant studying observable signatures of impulsive heating in the solar corona.
-  - title: NSF REU Research Fellow
+  - title: NSF REU Research Fellowship
     institution: Baylor University, CASPER
     location: Waco, TX USA
     dates: June 2012--August 2012
     advisor: Lorin Matthews, Ph.D.
-    description: Received NSF REU fellowship to study dust grain charging and growth in protoplanetary disks using numerical models.
-  - title: Undergraduate Research Assistant
+    description: Received NSF REU fellowship to study dust grain charging and growth in protoplanetary disks.
+  - title: Summer Undergraduate Research Fellowship
     institution: Baylor University, Dept. of Physics
     location: Waco, TX USA
     dates: June 2011--August 2011
     advisor: Lorin Matthews, Ph.D.
     description: Awarded summer research funding to investigate plasma physics of charged dust grains in Saturn's F Ring.
-- title: Publications
+- title: Papers
   entries:
-  - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores II. Nanoflare Trains
-    authors: 
-    - W.T. Barnes
-    - P.J. Cargill
-    - S.J. Bradshaw
-    journal: ApJ
-    year: 2016
-    doi: 2016ApJ...833..217B
-    url: "http://adsabs.harvard.edu/abs/2016ApJ...833..217B"
-  - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores I. Single Nanoflares
-    authors:
-    - W.T. Barnes
-    - P.J. Cargill
-    - S.J. Bradshaw
-    journal: ApJ
-    year: 2016
-    doi: 2016ApJ...829...31B
-    url: "http://adsabs.harvard.edu/abs/2016ApJ...829...31B"
-- title: Talks
+  - title: Refereed Publications
+    entries:
+    - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores II. Nanoflare Trains
+      authors: 
+      - W.T. Barnes
+      - P.J. Cargill
+      - S.J. Bradshaw
+      journal: ApJ
+      year: 2016
+      doi: "10.3847/1538-4357/833/2/217"
+    - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores I. Single Nanoflares
+      authors:
+      - W.T. Barnes
+      - P.J. Cargill
+      - S.J. Bradshaw
+      journal: ApJ
+      year: 2016
+      doi: "10.3847/0004-637X/829/1/31"
+  - title: Conference Proceedings
+    entries:
+    - title: "ChiantiPy: A Python Package for Astrophysical Spectroscopy"
+      authors:
+      - W.T. Barnes
+      - K.P. Dere
+      journal: 16th SciPy Conference
+      year: 2017
+      doi: 10.25080/shinma-7f4c6e7-011
+- title: Presentations
   entries:
-  - dates: 11 July 2018
-    location: Washington, D.C.
-    type: Talk
-    event: NRL Solar and Heliospheric Physics Branch Seminar (Invited)
-    institution: Naval Research Laboratory
-    title: Investigating Heating Frequency in Active Region Cores through Timelag Analysis of Forward Modeled Emission
-    url:
-  - dates: 21-24 May 2018
-    location: Leesburg, VA
-    type: Talk
-    event: Triennial Earth-Sun Summit
-    title: "Timelag Analysis of Simulated Active Region Cores Heated by Nanoflares"
-    url:
-    institution: American Geophysical Union
-  - dates: 30 April-4 May 2018
-    location: New York City, NY
-    type: Talk
-    event: "Python in Astronomy 2018"
-    title: "A Complete fiasco - The Difficulties of Dealing with Atomic Data and a Possible Pythonic Solution"
-    url: "https://zenodo.org/record/1249002"
-    institution: Center for Computational Astrophysics, The Flatiron Institute
-  - dates: 10-16 July 2017
-    location: Austin, TX
-    type: Talk
-    event: "SciPy: Scientific Computing in Python"
-    title: "ChiantiPy: a Python package for Astrophysical Spectroscopy"
-    url: "https://youtu.be/79ledxbnrPU"
-    institution: SciPy, Enthought
-  - dates: 27-30 June 2017
-    location: Palermo, Italy
-    event: Coronal Loops Workshop VIII
-    type: Talk
-    title: Constraining Nanoflare Heating Frequency with a Global Active Region Model
-    url: "https://wtbarnes.github.io/loops-workshop-2017-talk/"
-    institution: INAF IASF Palermo
-  - dates: 27 February 2017
-    location: Houston, TX
-    type: Talk
-    event: Space Physics Seminar Series
-    institution: Rice University
-    title: A Framework for Forward Modeling Solar Active Regions
-    url: 
-  - dates: 31 May-3 June 2016
-    location: Boulder, CO
-    type: Talk
-    institution: American Astronomical Society
-    event: 47th Annual Solar Physics Division Meeting
-    title: Hot Non-flaring Plasmas in Active Region Cores Heated by Single Nanoflares
-    url: "http://adsabs.harvard.edu/abs/2016SPD....4720203B"
-  - dates: 9 November 2015
-    location: Houston, TX
-    type: Talk
-    institution: Rice University
-    event: Space Physics Seminar Series
-    title: Impacts of Two-fluid Effects on Emission from Impulsively Heated Coronal Loops
-    url:
-  - dates: 14 September 2012
-    location: College Station, TX
-    type: Talk
-    institution: Texas A&M University
-    event: Texas Undergraduate Astronomy Research Symposium
-    title: Dust Grain Charging in a Protoplanetary Disk
-    url:
-- title: Conference Papers and Posters
+  - title: Conference Talks
+    entries:
+    - dates: 21-24 May 2018
+      location: Leesburg, VA
+      event: Triennial Earth-Sun Summit
+      title: "Timelag Analysis of Simulated Active Region Cores Heated by Nanoflares"
+      institution: American Geophysical Union
+    - dates: 30 April-4 May 2018
+      location: New York City, NY
+      event: "Python in Astronomy 2018"
+      title: "A Complete fiasco - The Difficulties of Dealing with Atomic Data and a Possible Pythonic Solution"
+      doi: 10.5281/zenodo.1249002
+      institution: Center for Computational Astrophysics, The Flatiron Institute
+    - dates: 10-16 July 2017
+      location: Austin, TX
+      event: "16th Python in Science Conference"
+      title: "ChiantiPy: a Python package for Astrophysical Spectroscopy"
+      institution: SciPy, Enthought
+    - dates: 27-30 June 2017
+      location: Palermo, Italy
+      event: Coronal Loops Workshop VIII
+      title: Constraining Nanoflare Heating Frequency with a Global Active Region Model
+      institution: INAF IASF Palermo
+    - dates: 31 May-3 June 2016
+      location: Boulder, CO
+      institution: American Astronomical Society
+      event: 47th Annual Solar Physics Division Meeting
+      title: Hot Non-flaring Plasmas in Active Region Cores Heated by Single Nanoflares
+      bibcode: "2016SPD....4720203B"
+    - dates: 14 September 2012
+      location: College Station, TX
+      institution: Texas A&M University
+      event: Texas Undergraduate Astronomy Research Symposium
+      title: Dust Grain Charging in a Protoplanetary Disk
+  - title: Seminars
+    entries:
+    - dates: 11 July 2018
+      location: Washington, D.C.
+      type: Talk
+      event: NRL Solar and Heliospheric Physics Branch Seminar (Invited)
+      institution: Naval Research Laboratory
+      title: Investigating Heating Frequency in Active Region Cores through Timelag Analysis of Forward Modeled Emission
+      selected: True
+    - dates: 27 February 2017
+      location: Houston, TX
+      type: Talk
+      event: Space Physics Seminar Series
+      institution: Rice University
+      title: A Framework for Forward Modeling Solar Active Regions
+    - dates: 9 November 2015
+      location: Houston, TX
+      type: Talk
+      institution: Rice University
+      event: Space Physics Seminar Series
+      title: Impacts of Two-fluid Effects on Emission from Impulsively Heated Coronal Loops
+  - title: Outreach
+    entries:
+    - dates: 24 August 2018
+      location: Conroe, TX 
+      event: North Houston Astronomy Club Late Summer Gathering
+      institution: Lone Star College-Montgomery Campus
+      title: "Why is the Sun So Hot? A Current Perspective on Coronal Heating"
+  - title: Posters
+    entries:
+    - dates: 30 July-3 August 2018
+      location: Cocoa Beach, FL
+      event: Solar Heliospheric and Interplanetary Environment (SHINE) Workshop
+      title: "Using Synthetic and Observed Timelags to Constrain Nanoflare Heating Frequency in Active Region Cores"
+      bibcode: "2018shin.confE..23B" 
+      institution: National Science Foundation
+    - dates: 9-10 October 2017
+      location: Houston, TX
+      event: Rice Data Science Conference
+      title: "Timelag Analysis of Global Hydrodynamic Simulations of Active Regions in the Solar Corona"
+      institution: Rice University
+    - dates: 24-28 July 2017
+      location: Saint-Sauveur, Quebec, CA
+      event: Solar Heliospheric and Interplanetary Environment (SHINE) Workshop
+      title: "Modeling Observable Signatures of Nanoflare Heating Frequency in Active Region Cores"
+      institution: National Science Foundation
+    - dates: 11-15 July 2016
+      location: Santa Fe, NM
+      institution: National Science Foundation
+      event: Solar Heliospheric and Interplanetary Environment (SHINE) Workshop
+      title: Understanding the Impact of Nanoflare Heating Frequency on the Observed Emission Measure Distribution
+    - dates: 21-23 July 2015
+      location: Cambridge, UK
+      institution: Unversity of Cambridge
+      event: Coronal Loops Workshop VII
+      title: Effects of Ion Heating on Emission Measure of Coronal Loops in Active Region Cores
+    - dates: 26-30 April 2015
+      location: Indianapolis, IN
+      institution: American Astronomical Society
+      event: Triennial Earth-Sun Summit
+      title: Nonnegative Matrix Factorization as a Method for Studying Coronal Heating
+      bibcode: "2015TESS....120306B"
+    - dates: 18-22 March 2013
+      location: The Woodlands, TX
+      institution: Lunar and Planetary Science Institute
+      event: 44th Annual Lunar and Planetary Science Conference
+      title: "Dust Grain Growth in a Protoplanetary Disk: Effects of Location on Charge and Size"
+      bibcode: "2015TESS....120306B"
+- title: Professional Service
   entries:
-  - dates: 9-10 October 2017
-    location: Houston, TX
-    type: Poster
-    event: Rice Data Science Conference
-    title: "Timelag Analysis of Global Hydrodynamic Simulations of Active Regions in the Solar Corona"
-    url: "http://dsconference.rice.edu/program/"
-    institution: Rice University
-  - dates: 24-28 July 2017
-    location: Saint-Sauveur, Quebec, CA
-    type: Poster
+  - role: Discussion session co-organizer and co-chair (with S. Bradshaw and N. Viall)
     event: SHINE Workshop
-    title: "Modeling Observable Signatures of Nanoflare Heating Frequency in Active Region Cores"
-    url: "http://shinecon.org/shine2017/ViewAbstract.php?idabs=80"
-    institution: National Science Foundation
-  - dates: 10-16 July 2017
-    location: Austin, TX
-    event: "SciPy: Scientific Computing in Python"
-    institution: SciPy
-    title: "ChiantiPy: a Python package for Astrophysical Spectroscopy"
-    url: http://conference.scipy.org/proceedings/scipy2017/will_barnes.html
-  - dates: 11-15 July 2016
-    location: Santa Fe, NM
-    type: Poster
-    institution: National Science Foundation
-    event: Solar Heliospheric and Interplanetary Environment (SHINE) Workshop
-    title: Understanding the Impact of Nanoflare Heating Frequency on the Observed Emission Measure Distribution
-    url: "http://shinecon.org/shine2016/ViewAbstract.php?idabs=132"
-  - dates: 21-23 July 2015
-    location: Cambridge, UK
-    type: Poster
-    institution: Unversity of Cambridge
-    event: Coronal Loops Workshop VII
-    title: Effects of Ion Heating on Emission Measure of Coronal Loops in Active Region Cores
-    url:
-  - dates: 26-30 April 2015
-    location: Indianapolis, IN
-    type: Poster
-    institution: American Astronomical Society
-    event: Triennial Earth-Sun Summit
-    title: Nonnegative Matrix Factorization as a Method for Studying Coronal Heating
-    url: "http://adsabs.harvard.edu/abs/2015TESS....120306B"
-  - dates: 18-22 March 2013
-    location: The Woodlands, TX
-    type: Poster
-    institution: Lunar and Planetary Science Institute
-    event: 44th Annual Lunar and Planetary Science Conference
-    title: "Dust Grain Growth in a Protoplanetary Disk: Effects of Location on Charge and Size"
-    url: "http://adsabs.harvard.edu/abs/2013LPI....44.1897B"
+    dates: 30 July-3 August 2018
+    description: "Topic: Signatures of Time-dependent Heating in Active Regions and the Slow Solar Wind"
+  - role: Student Representative 
+    event: SPD/AAS Congressional Visit Day
+    dates: 25 May 2018
+    description: Visited senators and representatives to lobby for increase in NASA heliophysics budget
 - title: Software and Computing Skills
-  cvitems:
+  entries:
   - name: Languages
     value: Bash, C, C++, Python
   - name: Scientific Computing
@@ -209,39 +214,76 @@ sections:
   - name: Other
     value: continuous integration, documentation, testing, version control
 - title: Students Mentored
-  cvitems:
+  entries:
   - name: Lily Han
-    value: Undergraduate (Rice), assisted in advising undergraduate thesis work, October 2017-April 2018
+    description: Undergraduate (Rice), assisted in advising undergraduate thesis work
+    dates:  Oct. 2017-Apr. 2018
   - name: Brandon Wang
-    value: High school intern, advisor for STEM research course, April 2017-May 2018
+    description: High school intern, advisor for STEM research course
+    dates:  Apr. 2017-May 2018
   - name: Tessa Wilkinson
-    value: Undergraduate, Google Summer of Code mentor (the SunPy project), May-August 2016
+    description: Undergraduate, Google Summer of Code mentor (the SunPy project)
+    dates: May-Aug. 2016
 - title: Teaching Experience
   entries:
-    - dates: Spring 2017
-      title: Guest Lecturer
-      class: "ASTR 201: Stars, Galaxies, and the Universe"
-      description: Gave two guest lectures for non-majors astronomy course of approximately 70 undergraduate students. Topics covered included eclipses, phases of the moon, and the celestial sphere.
-    - dates: Spring 2014, Spring 2015
-      title: Lab Teaching Assistant
-      class: "PHYS 102: Electricity and Magnetism"
-      description: Instructed lab sections of 40+ undergraduate students on topics including electrostatic interactions, magnetic induction, and basic circuits.
-    - dates: Fall 2014, Fall 2015
-      title: Lab Teaching Assistant
-      class: "PHYS 101: Mechanics"
-      description: Instructed lab sections of 40+ undergraduate students on topics including kinematics, collisions, and simple harmonic motion.
+  - dates: Spring 2017
+    title: Guest Lecturer
+    class: "ASTR 201: Stars, Galaxies, and the Universe"
+    description: Gave two guest lectures for non-majors astronomy course of approximately 70 undergraduate students. Topics covered included eclipses, phases of the moon, and the celestial sphere.
+    institution: Rice University
+  - dates: Spring 2014, Spring 2015
+    title: Lab Teaching Assistant
+    class: "PHYS 102: Electricity and Magnetism"
+    description: Instructed lab sections of 40+ undergraduate students on topics including electrostatic interactions, magnetic induction, and basic circuits.
+    institution: Rice University
+  - dates: Fall 2014, Fall 2015
+    title: Lab Teaching Assistant
+    class: "PHYS 101: Mechanics"
+    description: Instructed lab sections of 40+ undergraduate students on topics including kinematics, collisions, and simple harmonic motion.
+    institution: Rice University
 - title: Honors and Awards
-  cvlistitems:
-  - Outstanding Student Poster Award, SHINE Workshop, July 2017
-  - William and Elva Gordon Fellowship, Rice University, May 2016
-  - Chuoke Award for Second- and Third-year Graduate Students, Rice University, May 2016
-  - Studentship Travel Award for 2015,2016,2018 SPD Annual Meetings, Solar Physics Division of the AAS
-  - URSA Scholars Week Outstanding Research Poster in Physics, Baylor University, 2013
-  - Dean's List, Baylor University, 7 of 8 semesters
-  - President's Gold Scholarship, Baylor University, all semesters
-  - Gordon K. Teal Scholarship, Dept. of Physics, Baylor University, 2 academic years
-  - Herbert D. Schwetman Scholarship, Dept. of Physics, Baylor University, 2 academic years
-- title: Societies and Associations
+  entries:
+  - name: Metcalf Travel Award to the SDO Workshop
+    awarder: Solar physics Division of the AAS
+    dates: Nov. 2018
+  - name: Scientific Image Contest (Second Place)
+    awarder: Wiess School of Natural Sciences, Rice University
+    dates: Nov. 2017
+  - name: Outstanding Student Poster Award
+    awarder: SHINE Workshop
+    dates: July 2017
+  - name: William and Elva Gordon Fellowship
+    awarder: Department of Physics and Astronomy, Rice University
+    dates: May 2016
+  - name: Chuoke Graduate Student Award
+    awarder: Department of Physics and Astronomy, Rice University
+    dates: May 2016
+  - name: Studentship Travel Award for  SPD Annual Meetings
+    awarder: Solar Physics Division of the AAS
+    dates: 2015, 2016, 2018
+  - name: URSA Scholars Week Outstanding Research Poster in Physics
+    awarder: Baylor University
+    dates: April 2013
+  - name: President's Gold Scholarship
+    awarder: Baylor University
+    dates: 2009-2013
+  - name: Gordon K. Teal Scholarship
+    awarder: Department of Physics, Baylor University
+    dates: 2011, 2012
+  - name: Herbert D. Schwetman Scholarship
+    awarder: Department of Physics, Baylor University
+    dates: 2010, 2011
+- title: Memberships
+  entries:
+  - Sigma Pi Sigma
+  - Phi Beta Kappa
+- title: Employment Experience
+  entries:
+  - title: Office Assistant
+    dates: January 2010-May 2013
+    org: Department of Physics, Baylor University
+    description: Assisted with examinations and attendance for introductory astronomy class of approximately 300 students. Helped with departmental events and mailing as well as other miscellaneous duties.
+- title: Philanthropy
   entries:
   - title: National Honors Society
     dates: April 2009-May 2013
@@ -250,18 +292,22 @@ sections:
   - title: National Service Fraternity, Zeta Omega chapter
     dates: September 2010-May 2013
     org: Alpha Phi Omega
-    description: Served as historian and treasurer. Completed 35 hours of service per semester. Managed finances for the organization. Organized a fundraiser.
-  - title: National Physics Honors Society
-    dates: April 2012-present
-    org: Sigma Pi Sigma
-    description: Requirements for entry include being in upper-third of the class and completion of at least three semester of college course work in physics.
-  - title: President
-    dates: September 2009-May 2013
-    org: Society of Physics Students
-    description: As president, initiated rechartering of university chapter. Scheduled and presided over meetings. Organized end of the year luncheon and design and printing of t-shirts.
-- title: Employment Experience
+    description: Completed 35 hours of service per semester
+- title: Leadership
   entries:
-  - title: Office Assistant
-    dates: January 2010-May 2013
-    org: Department of Physics, Baylor University
-    description: Assisted with examinations and attendance for introductory astronomy class of approximately 300 students. Helped with departmental events and mailing as well as other miscellaneous duties.
+  - role: President
+    org: Society of Physics Students, Baylor University chapter
+    dates: August 2011-May 2012
+    description:
+    - Initiated rechartering of university chapter
+    - Scheduled and presided over meetings
+    - Organized end of the year luncheon
+    - Oversaw design and printing of t-shirts.
+  - role: Treasurer
+    org: Alpha Phi Omega, Zeta Omega chapter
+    dates: August 2011-May 2012
+    description:
+    - Managed chapter finances
+    - Collected membership dues
+    - Organized fundraiser
+
