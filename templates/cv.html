@@ -37,7 +37,7 @@
 {% set sect = data.sections | select_by_attr_name("title", "Presentations") %}
 <h2>{{ sect.title }}</h2>
 {% for i in sect.entries%}
-<h3>{{ i.title }}</h2>
+<h3>{{ i.title }}</h3>
 <ul>
 {% for j in i.entries %}
 <li class="lead"><em>{{ j.title }}</em> <span class="pull-right">{{ j.event }}</span><br>{{ j.dates }}, {{ j.location }}</li>
