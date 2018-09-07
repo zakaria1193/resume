@@ -13,6 +13,7 @@ preamble:
     webpage: https://wtbarnes.github.io
     twitter: wtbarnes_
     github: wtbarnes
+    orcid: "0000-0001-9642-6089"
   current:
     role: Graduate Research Assistant
 sections:
@@ -89,6 +90,14 @@ sections:
       journal: 16th SciPy Conference
       year: 2017
       doi: 10.25080/shinma-7f4c6e7-011
+    - title: "Dust Grain Growth in a Protoplanetary Disk: Effects of Location on Charge and Size"
+      authors:
+      - W.T. Barnes
+      - L.S. Matthews
+      - T.W. Hyde
+      journal: 44th LPSC
+      year: 2013
+      bibcode: "2013LPI....44.1897B"
 - title: Presentations
   entries:
   - title: Conference Talks
@@ -171,11 +180,13 @@ sections:
       event: Solar Heliospheric and Interplanetary Environment (SHINE) Workshop
       title: "Modeling Observable Signatures of Nanoflare Heating Frequency in Active Region Cores"
       institution: National Science Foundation
+      bibcode: 2017shin.confE.159B
     - dates: 11-15 July 2016
       location: Santa Fe, NM
       institution: National Science Foundation
       event: Solar Heliospheric and Interplanetary Environment (SHINE) Workshop
       title: Understanding the Impact of Nanoflare Heating Frequency on the Observed Emission Measure Distribution
+      bibcode: 2016shin.confE..69B
     - dates: 21-23 July 2015
       location: Cambridge, UK
       institution: Unversity of Cambridge
@@ -192,7 +203,7 @@ sections:
       institution: Lunar and Planetary Science Institute
       event: 44th Annual Lunar and Planetary Science Conference
       title: "Dust Grain Growth in a Protoplanetary Disk: Effects of Location on Charge and Size"
-      bibcode: "2015TESS....120306B"
+      bibcode: "2013LPI....44.1897B"
 - title: Professional Service
   entries:
   - role: Discussion session co-organizer and co-chair (with S. Bradshaw and N. Viall)
@@ -203,29 +214,59 @@ sections:
     event: SPD/AAS Congressional Visit Day
     dates: 25 May 2018
     description: Visited senators and representatives to lobby for increase in NASA heliophysics budget
-- title: Software and Computing Skills
+- title: Software and Computing
   entries:
-  - name: Languages
-    value: Bash, C, C++, Python
-  - name: Scientific Computing
-    value: IDL, Mathematica, MATLAB, NumPy, SciPy, SLURM, TORQUE
-  - name: Markup
-    value:  CSS, HTML, LaTeX, markdown, reStructuredText
-  - name: Other
-    value: continuous integration, documentation, testing, version control
+  - title: Skills
+    entries:
+    - name: Languages
+      value: Bash, C, C++, Python
+    - name: Scientific Computing
+      value: IDL, Mathematica, MATLAB, NumPy, SciPy, SLURM, TORQUE
+    - name: Markup
+      value:  CSS, HTML, LaTeX, markdown, reStructuredText
+    - name: Other
+      value: high performance computing, continuous integration, documentation, testing, version control
+  - title: Open Source Contributions
+    entries:
+    - name: fiasco
+      role: Maintainer
+      repo: "wtbarnes/fiasco"
+      dates: "2017-present"
+      description: fiasco provides a modern Python interface to the CHIANTI atomic database in addition to implementing many atomic physics calculations commonly used in solar physics. I am the creator and primary maintainer of fiasco.
+    - name: SunPy
+      role: Contributor
+      repo: "sunpy/sunpy"
+      dates: "2016-present"
+      description: SunPy is a library for solar data analysis in Python. I am an active member of the SunPy community and have made several contributions to the package. Specifically, I have worked to implement the widely-used AIA temperature response functions in SunPy.
+    - name: ChiantiPy
+      repo: "chianti-atomic/ChiantiPy"
+      role: Contributor
+      dates: 2016-2017
+      description: ChiantiPy is a Python interface to CHIANTI atomic database. My main contributions to ChiantiPy have been improving the documentation and packaging infrastructure and adding a test suite.
 - title: Students Mentored
   entries:
   - name: Lily Han
-    description: Undergraduate (Rice), assisted in advising undergraduate thesis work
+    role: Undergraduate
+    institution: Rice University
+    description: Assisted in advising undergraduate thesis work on force-free field extrapolations and forward modeling
     dates:  Oct. 2017-Apr. 2018
   - name: Brandon Wang
-    description: High school intern, advisor for STEM research course
+    role: High school intern
+    institution: Clements High School
+    description: Advisor for STEM research course.
     dates:  Apr. 2017-May 2018
   - name: Tessa Wilkinson
-    description: Undergraduate, Google Summer of Code mentor (the SunPy project)
+    role: Undergraduate
+    institution: Google Summer of Code
+    description: Mentor for project to implement AIA response functions in SunPy 
     dates: May-Aug. 2016
 - title: Teaching Experience
   entries:
+  - dates: Fall 2018
+    title: Guest Lecturer
+    class: "PHYS 480/580: Introduction to Plasma Physics"
+    description: Gave guest lecture for introductory plasma course for senior undergraduate and graduate students. Topics covered included electrostatic waves, binary collisions, and motion in a uniform magnetic field.
+    institution: Rice University
   - dates: Spring 2017
     title: Guest Lecturer
     class: "ASTR 201: Stars, Galaxies, and the Universe"
@@ -275,9 +316,10 @@ sections:
     dates: 2010, 2011
 - title: Memberships
   entries:
-  - Sigma Pi Sigma
+  - American Astronomical Society, Solar Physics Division (Junior Membership)
   - Phi Beta Kappa
-- title: Employment Experience
+  - Sigma Pi Sigma
+- title: Other Employment Experience
   entries:
   - title: Office Assistant
     dates: January 2010-May 2013
