@@ -14,9 +14,9 @@
 %
 
 
-%-------------------------------------------------------------------------------
-% CONFIGURATIONS
-%-------------------------------------------------------------------------------
+%------------------------------------------------------------------------------%
+% CONFIGURATIONS                                                               %
+%------------------------------------------------------------------------------%
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[10pt, letterpaper]{awesome-cv}
 
@@ -31,13 +31,13 @@
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-red}
 % Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
+%\definecolor{awesome}{HTML}{002469}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
 % \definecolor{darktext}{HTML}{414141}
 % \definecolor{text}{HTML}{333333}
-% \definecolor{graytext}{HTML}{5D5D5D}
+%\definecolor{graytext}{HTML}{5e6062}
 % \definecolor{lighttext}{HTML}{999999}
 
 % Set false if you don't want to highlight section with awesome color
@@ -47,14 +47,13 @@
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
 
-%-------------------------------------------------------------------------------
-%	PERSONAL INFORMATION
-%	Comment any of the lines below if they are not required
-%-------------------------------------------------------------------------------
+%------------------------------------------------------------------------------%
+%	PERSONAL INFORMATION                                                         %
+%	Comment any of the lines below if they are not required                      %
+%------------------------------------------------------------------------------%
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo{./examples/profile.png}
 \name{(((data.preamble.name.first)))}{(((data.preamble.name.last)))}
-%\position{Software Architect{\enskip\cdotp\enskip}Security Expert}
 \position{((( data.preamble.current.role )))}
 \address{(((data.preamble.address.street))), (((data.preamble.address.city))), (((data.preamble.address.country)))}
 
@@ -62,10 +61,10 @@
 \email{(((data.preamble.contact.mail)))}
 \homepage{(((data.preamble.contact.webpage)))}
 \github{(((data.preamble.contact.github)))}
-%\linkedin{linkedin-name}
+% \linkedin{linkedin-name}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
-%\twitter{(((data.preamble.contact.twitter)))}
+% \twitter{(((data.preamble.contact.twitter)))}
 % \skype{skype-id}
 % \reddit{reddit-id}
 % \extrainfo{extra informations}
@@ -90,12 +89,12 @@
 
 %-------------------------------------------------------------------------------%
 %-------------------------------------------------------------------------------%
-%	                                CV Content
+%	                                CV Content                                    %
 %-------------------------------------------------------------------------------%
 %-------------------------------------------------------------------------------%
 
 %-------------------------------------------------------------------------------%
-%	                                Education
+%	                                Education                                     %
 %-------------------------------------------------------------------------------%
 ((* set sect = data.sections | select_by_attr_name("title", "Education") *))
 \cvsection{(((sect.title)))}
@@ -117,10 +116,14 @@
 \end{cventries}
 
 %-------------------------------------------------------------------------------%
-%	                                Publications
+%	                                Publications                                  %
 %-------------------------------------------------------------------------------%
 ((* set  sect = data.sections | select_by_attr_name("title", "Papers") *))
 \cvsection{((( sect.title )))}
+
+A current publication list is also available from 
+\href{https://orcid.org/((( data.preamble.contact.orcid )))}
+     {Orcid (ID: ((( data.preamble.contact.orcid ))))}.
 ((* for i in sect.entries *))
 \cvsubsection{((( i.title | escape_tex )))}
 \begin{cventries}
@@ -129,14 +132,18 @@
   {((( j.title | escape_tex )))}
   {((( j.authors | author_filter(True) )))}
   {((( j.journal | escape_tex ))), ((( j.year )))}
+  ((* if j.doi -*))
   {doi: ((( j.doi | doi_to_url(j.doi, j.bibcode, 'tex') )))}
+  ((*- else -*))
+  {bibcode: ((( j.bibcode | doi_to_url(j.doi, j.bibcode, 'tex') )))}
+  ((*- endif *))
   {}
 ((* endfor *))
 \end{cventries}
 ((* endfor *))
 
 %-------------------------------------------------------------------------------%
-%	                                Service
+%	                                Service                                       %
 %-------------------------------------------------------------------------------%
 ((* set sect = data.sections | select_by_attr_name("title", "Professional Service") *))
 \cvsection{((( sect.title | escape_tex )))}
@@ -152,7 +159,7 @@
 \end{cventries}
 
 %-------------------------------------------------------------------------------%
-%	                                Presentations
+%	                                Presentations                                 %
 %-------------------------------------------------------------------------------%
 ((* set sect = data.sections | select_by_attr_name("title", "Presentations") *))
 \cvsection{((( sect.title | escape_tex )))}
@@ -171,18 +178,38 @@
 ((* endfor *))
 
 %-------------------------------------------------------------------------------%
-%	                                Software and Computing
+%	                                Software and Computing                        %
 %-------------------------------------------------------------------------------%
-((* set sect = data.sections | select_by_attr_name("title", "Software and Computing Skills") *))
+((* set sect = data.sections | select_by_attr_name("title", "Software and Computing") *))
 \cvsection{((( sect.title | escape_tex )))}
+%--- Skills ---%
+((* set sect1 = sect.entries | select_by_attr_name("title", "Skills") *))
+\cvsubsection{((( sect1.title | escape_tex )))}
 \begin{cvskills}
-((* for i in sect.entries *))
+((* for i in sect1.entries *))
 \cvskill{((( i.name | escape_tex )))}{((( i.value | escape_tex )))}
 ((* endfor *))
 \end{cvskills}
+%--- Open Source ---%
+((* set sect2 = sect.entries | select_by_attr_name("title", "Open Source Contributions") *))
+\cvsubsection{((( sect2.title | escape_tex )))}
+
+A more complete record of my contributions is available on 
+\href{https://github.com/((( data.preamble.contact.github )))}
+     {GitHub}.
+\begin{cventries}
+((* for i in sect2.entries *))
+\cventry
+  {((( i.role | escape_tex )))}
+  {((( i.name | escape_tex )))}
+  {((( i.dates | escape_tex )))}
+  {\href{https://github.com/((( i.repo )))}{github.com/((( i.repo )))}}
+  {((( i.description )))}
+((* endfor *))
+\end{cventries}
 
 %-------------------------------------------------------------------------------%
-%	                                Fellowships
+%	                                Fellowships                                   %
 %-------------------------------------------------------------------------------%
 ((* set sect = data.sections | select_by_attr_name("title", "Research Fellowships") *))
 \cvsection{((( sect.title | escape_tex )))}
@@ -198,38 +225,7 @@
 \end{cventries}
 
 %-------------------------------------------------------------------------------%
-%	                                Students Mentored
-%-------------------------------------------------------------------------------%
-((* set sect = data.sections | select_by_attr_name("title", "Students Mentored") *))
-\cvsection{((( sect.title | escape_tex )))}
-\begin{cvhonors}
-((* for i in sect.entries *))
-\cvhonor
-  {((( i.name | escape_tex )))}
-  {((( i.description | escape_tex )))}
-  {((( i.dates | escape_tex )))}
-  {}
-((* endfor *))
-\end{cvhonors}
-
-%-------------------------------------------------------------------------------%
-%	                                Teaching Experience
-%-------------------------------------------------------------------------------%
-((* set sect = data.sections | select_by_attr_name("title", "Teaching Experience") *))
-\cvsection{((( sect.title | escape_tex )))}
-\begin{cventries}
-((* for i in sect.entries *))
-\cventry
-  {((( i.title | escape_tex )))}
-  {((( i.class | escape_tex )))}
-  {((( i.institution | escape_tex )))}
-  {((( i.dates | escape_tex )))}
-  {((( i.description | escape_tex )))}
-((* endfor *))
-\end{cventries}
-
-%-------------------------------------------------------------------------------%
-%	                                Honors and Awards
+%	                                Honors and Awards                             %
 %-------------------------------------------------------------------------------%
 ((* set sect = data.sections | select_by_attr_name("title", "Honors and Awards") *))
 \cvsection{((( sect.title | escape_tex )))}
@@ -244,23 +240,38 @@
 \end{cvhonors}
 
 %-------------------------------------------------------------------------------%
-%	                                Employment Experience
+%	                                Teaching and Mentoring                        %
 %-------------------------------------------------------------------------------%
-((* set sect = data.sections | select_by_attr_name("title", "Employment Experience") *))
-\cvsection{((( sect.title | escape_tex )))}
+\cvsection{Teaching and Mentoring}
+%----------------- Students -----------------%
+((* set sect = data.sections | select_by_attr_name("title", "Students Mentored") *))
+\cvsubsection{((( sect.title | escape_tex )))}
 \begin{cventries}
 ((* for i in sect.entries *))
 \cventry
-  {((( i.org | escape_tex )))}
+  {((( i.role | escape_tex )))}
+  {((( i.name | escape_tex )))}
+  {((( i.institution | escape_tex )))}
+  {((( i.dates | escape_tex )))}
+  {((( i.description | escape_tex )))}
+((* endfor *))
+\end{cventries}
+%----------------- Courses -----------------%
+((* set sect = data.sections | select_by_attr_name("title", "Teaching Experience") *))
+\cvsubsection{((( sect.title | escape_tex )))}
+\begin{cventries}
+((* for i in sect.entries *))
+\cventry
   {((( i.title | escape_tex )))}
-  {}
+  {((( i.class | escape_tex )))}
+  {((( i.institution | escape_tex )))}
   {((( i.dates | escape_tex )))}
   {((( i.description | escape_tex )))}
 ((* endfor *))
 \end{cventries}
 
 %-------------------------------------------------------------------------------%
-%	                                Memberships
+%	                                Memberships                                   %
 %-------------------------------------------------------------------------------%
 ((* set sect = data.sections | select_by_attr_name("title", "Memberships") *))
 \cvsection{((( sect.title | escape_tex )))}
@@ -271,17 +282,6 @@
   ((* endfor *))
 \end{cvitems}
 \end{cventries}
-
-
-%\input{cv/education.tex}
-%\input{cv/skills.tex}
-%\input{cv/experience.tex}
-%\input{cv/extracurricular.tex}
-%\input{cv/honors.tex}
-%\input{cv/presentation.tex}
-%\input{cv/writing.tex}
-%\input{cv/committees.tex}
-
 
 %-------------------------------------------------------------------------------
 \end{document}
