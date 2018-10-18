@@ -134,8 +134,10 @@ A current publication list is also available from
   {((( j.journal | escape_tex ))), ((( j.year )))}
   ((* if j.doi -*))
   {doi: ((( j.doi | doi_to_url(j.doi, j.bibcode, 'tex') )))}
-  ((*- else -*))
+  ((*- elif j.bibcode -*))
   {bibcode: ((( j.bibcode | doi_to_url(j.doi, j.bibcode, 'tex') )))}
+  ((*- else -*))
+  {}
   ((*- endif *))
   {}
 ((* endfor *))
