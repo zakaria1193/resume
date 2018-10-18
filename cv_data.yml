@@ -65,6 +65,20 @@ sections:
   entries:
   - title: Refereed Publications
     entries:
+    - title: Understanding Heating Frequency in Active Region Cores through Synthetic Observables I. Modeling
+      authors:
+      - W.T. Barnes
+      - S.J. Bradshaw
+      - N.M. Viall
+      journal: in prep
+      year: 2018
+    - title: Understanding Heating Frequency in Active Region Cores through Synthetic Observables II. Classifying Observations 
+      authors:
+      - W.T. Barnes
+      - S.J. Bradshaw
+      - N.M. Viall
+      journal: in prep
+      year: 2018
     - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores II. Nanoflare Trains
       authors: 
       - W.T. Barnes
