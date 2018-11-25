@@ -116,6 +116,16 @@ sections:
   entries:
   - title: Conference Talks
     entries:
+    - dates: 13-15 November 2018
+      location: Boulder, CO
+      event: Heliophysics Community Python Working Group Meeting
+      title: "fiasco: a Python Interface to the CHIANTI Atomic Database"
+      institution: Laboratory for Atmospheric and Space Physics
+    - dates: 29 October-2 November
+      location: Ghent, Belgium
+      event: 2018 SDO Science Workshop
+      title: "Understanding Heating Properties of Active Region Loops through Forward Modeling and Machine Learning"
+      institution: Royal Observatory Belgium, Solar-Terrestrial Centre of Excellence
     - dates: 21-24 May 2018
       location: Leesburg, VA
       event: Triennial Earth-Sun Summit
@@ -150,22 +160,24 @@ sections:
       title: Dust Grain Charging in a Protoplanetary Disk
   - title: Seminars
     entries:
+    - dates: 19 November 2018
+      location: Houston, TX
+      event: Space Physics Seminar Series
+      institution: Rice University
+      title: Understanding Heating Frequency in Active Region Loops through Forward Modeling and Machine Learning
     - dates: 11 July 2018
       location: Washington, D.C.
-      type: Talk
       event: NRL Solar and Heliospheric Physics Branch Seminar (Invited)
       institution: Naval Research Laboratory
       title: Investigating Heating Frequency in Active Region Cores through Timelag Analysis of Forward Modeled Emission
       selected: True
     - dates: 27 February 2017
       location: Houston, TX
-      type: Talk
       event: Space Physics Seminar Series
       institution: Rice University
       title: A Framework for Forward Modeling Solar Active Regions
     - dates: 9 November 2015
       location: Houston, TX
-      type: Talk
       institution: Rice University
       event: Space Physics Seminar Series
       title: Impacts of Two-fluid Effects on Emission from Impulsively Heated Coronal Loops
