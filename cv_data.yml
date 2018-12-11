@@ -245,13 +245,13 @@ sections:
   - title: Skills
     entries:
     - name: Languages
-      value: Bash, C, C++, Python
+      value: Bash, C, C++, IDL, Mathematica, MATLAB, Python
     - name: Scientific Computing
-      value: IDL, Mathematica, MATLAB, NumPy, SciPy, SLURM, TORQUE
+      value: numerical methods, high performance computing (e.g. SLURM, PBS), parallel/distributed data processing
     - name: Markup
       value:  CSS, HTML, LaTeX, markdown, reStructuredText
-    - name: Other
-      value: high performance computing, continuous integration, documentation, testing, version control
+    - name: DevOps
+      value: continuous integration, documentation, testing, version control
   - title: Open Source Contributions
     entries:
     - name: fiasco
