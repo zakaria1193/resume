@@ -31,7 +31,7 @@ sections:
     dates: 2016-present (expected May 2019)
     gpa:
     entries:
-      - "Thesis: Modeling Impulsive Heating in the Solar Corona (working title)"
+      - "Thesis: Diagnosing the Frequency of Energy Deposition in the Magnetically-closed Solar Corona"
       - "Advisor: Stephen Bradshaw, Ph.D."
   - school: Rice University
     degree: M.S. Physics
@@ -42,13 +42,19 @@ sections:
     location: Waco, TX USA
     dates: 2009-2013
     gpa: "GPA: 3.89/4.00"
-    degree: B.S. Astrophysics
+    degree: "B.S. Astrophysics"
     entries:
       - "Thesis: Astrophysical Applications of Dusty Plasma Physics, Advisor: Lorin Matthews, Ph.D."
       - University Honors Program, Magna Cum Laude, Phi Beta Kappa, Dean's List
       - "Minors: Mathematics, Great Texts of the Western Tradition"
 - title: Research Fellowships
   entries:
+  - title: NRC Research Associateship Postdoctoral Fellowship
+    institution: Naval Research Laboratory, National Academies of Sciences
+    location: Washington, D.C. USA
+    dates: ""
+    advisor: Harry Warren, Ph.D.
+    description: Awarded 1-year NRC postdoctoral fellowship to study observational signatures of thermal non-equilibrium in coronal loops
   - title: NSF REU Research Fellowship
     institution: Baylor University, CASPER
     location: Waco, TX USA
@@ -65,14 +71,14 @@ sections:
   entries:
   - title: Refereed Publications
     entries:
-    - title: Understanding Heating Frequency in Active Region Cores through Synthetic Observables I. Modeling
+    - title: Understanding Heating in Active Region Cores through Machine Learning II. Classifying Observations 
       authors:
       - W.T. Barnes
       - S.J. Bradshaw
       - N.M. Viall
       journal: in prep
       year: 2019
-    - title: Understanding Heating Frequency in Active Region Cores through Synthetic Observables II. Classifying Observations 
+    - title: Understanding Heating in Active Region Cores through Machine Learning I. Numerical Modeling and Predicted Observables
       authors:
       - W.T. Barnes
       - S.J. Bradshaw
@@ -112,6 +118,16 @@ sections:
       journal: 44th LPSC
       year: 2013
       bibcode: "2013LPI....44.1897B"
+  - title: Other Non-refereed Publications
+    entries:
+    - title: "Modeling Coronal Loops in 3D with sunpy.coordinates"
+      authors:
+      - W.T. Barnes
+      journal: SunPy Blog
+      year: 2018
+      url:
+        link: https://sunpy.org/posts/2018/2018-07-21-coronal-loop-coordinates.html
+        name: "sunpy.org"
 - title: Presentations
   entries:
   - title: Conference Talks
@@ -347,9 +363,15 @@ sections:
   - Sigma Pi Sigma
 - title: Other Employment Experience
   entries:
+  - title: Research Computing Intern
+    dates: October 2018-present
+    org: Center for Research Computing, Rice University
+    location: Houston, TX USA
+    description: Developed web application for scheduled data transfers with Globus. Refactored high performance computing documentation in reStructuredText and Sphinx with interactive examples. Explored research applications for cloud computing.
   - title: Office Assistant
     dates: January 2010-May 2013
     org: Department of Physics, Baylor University
+    location: Waco, TX USA
     description: Assisted with examinations and attendance for introductory astronomy class of approximately 300 students. Helped with departmental events and mailing as well as other miscellaneous duties.
 - title: Philanthropy
   entries:

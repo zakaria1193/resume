@@ -136,6 +136,8 @@ A current publication list is also available from
   {doi: ((( j.doi | doi_to_url(j.doi, j.bibcode, 'tex') )))}
   ((*- elif j.bibcode -*))
   {bibcode: ((( j.bibcode | doi_to_url(j.doi, j.bibcode, 'tex') )))}
+  ((*- elif j.url -*))
+  {url: \href{((( j.url.link )))}{((( j.url.name )))}}
   ((*- else -*))
   {}
   ((*- endif *))
@@ -143,6 +145,22 @@ A current publication list is also available from
 ((* endfor *))
 \end{cventries}
 ((* endfor *))
+
+%-------------------------------------------------------------------------------%
+%	                                Fellowships                                   %
+%-------------------------------------------------------------------------------%
+((* set sect = data.sections | select_by_attr_name("title", "Research Fellowships") *))
+\cvsection{((( sect.title | escape_tex )))}
+\begin{cventries}
+((* for i in sect.entries *))
+\cventry
+  {((( i.institution | escape_tex )))}
+  {((( i.title | escape_tex )))}
+  {((( i.location )))}
+  {((( i.dates )))}
+  {((( i.description | escape_tex )))}
+((* endfor *))
+\end{cventries}
 
 %-------------------------------------------------------------------------------%
 %	                                Service                                       %
@@ -180,6 +198,21 @@ A current publication list is also available from
 ((* endfor *))
 
 %-------------------------------------------------------------------------------%
+%	                                Honors and Awards                             %
+%-------------------------------------------------------------------------------%
+((* set sect = data.sections | select_by_attr_name("title", "Honors and Awards") *))
+\cvsection{((( sect.title | escape_tex )))}
+\begin{cvhonors}
+((* for i in sect.entries *))
+\cvhonor
+  {((( i.name )))}
+  {((( i.awarder )))}
+  {}
+  {((( i.dates )))}
+((* endfor *))
+\end{cvhonors}
+
+%-------------------------------------------------------------------------------%
 %	                                Software and Computing                        %
 %-------------------------------------------------------------------------------%
 ((* set sect = data.sections | select_by_attr_name("title", "Software and Computing") *))
@@ -209,37 +242,6 @@ A more complete record of my contributions is available on
   {((( i.description )))}
 ((* endfor *))
 \end{cventries}
-
-%-------------------------------------------------------------------------------%
-%	                                Fellowships                                   %
-%-------------------------------------------------------------------------------%
-((* set sect = data.sections | select_by_attr_name("title", "Research Fellowships") *))
-\cvsection{((( sect.title | escape_tex )))}
-\begin{cventries}
-((* for i in sect.entries *))
-\cventry
-  {((( i.institution | escape_tex )))}
-  {((( i.title | escape_tex )))}
-  {((( i.location )))}
-  {((( i.dates )))}
-  {((( i.description | escape_tex )))}
-((* endfor *))
-\end{cventries}
-
-%-------------------------------------------------------------------------------%
-%	                                Honors and Awards                             %
-%-------------------------------------------------------------------------------%
-((* set sect = data.sections | select_by_attr_name("title", "Honors and Awards") *))
-\cvsection{((( sect.title | escape_tex )))}
-\begin{cvhonors}
-((* for i in sect.entries *))
-\cvhonor
-  {((( i.name )))}
-  {((( i.awarder )))}
-  {}
-  {((( i.dates )))}
-((* endfor *))
-\end{cvhonors}
 
 %-------------------------------------------------------------------------------%
 %	                                Teaching and Mentoring                        %
@@ -283,6 +285,23 @@ A more complete record of my contributions is available on
   \item{((( i )))}
   ((* endfor *))
 \end{cvitems}
+\vspace{1em}
+\end{cventries}
+
+%-------------------------------------------------------------------------------%
+%	                                Other Employment                              %
+%-------------------------------------------------------------------------------%
+((* set sect = data.sections | select_by_attr_name("title", "Other Employment Experience") *))
+\cvsection{((( sect.title | escape_tex )))}
+\begin{cventries}
+((* for i in sect.entries *))
+\cventry
+  {((( i.org | escape_tex )))}
+  {((( i.title | escape_tex )))}
+  {((( i.location )))}
+  {((( i.dates )))}
+  {((( i.description | escape_tex )))}
+((* endfor *))
 \end{cventries}
 
 %-------------------------------------------------------------------------------
