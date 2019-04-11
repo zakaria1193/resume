@@ -83,7 +83,7 @@ sections:
       - W.T. Barnes
       - S.J. Bradshaw
       - N.M. Viall
-      journal: in prep
+      journal: under review
       year: 2019
     - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores II. Nanoflare Trains
       authors: 
@@ -368,11 +368,11 @@ sections:
     org: Center for Research Computing, Rice University
     location: Houston, TX USA
     description: Developed web application for scheduled data transfers with Globus. Refactored high performance computing documentation in reStructuredText and Sphinx with interactive examples. Explored research applications for cloud computing.
-  - title: Office Assistant
-    dates: January 2010-May 2013
-    org: Department of Physics, Baylor University
-    location: Waco, TX USA
-    description: Assisted with examinations and attendance for introductory astronomy class of approximately 300 students. Helped with departmental events and mailing as well as other miscellaneous duties.
+#  - title: Office Assistant
+#    dates: January 2010-May 2013
+#    org: Department of Physics, Baylor University
+#    location: Waco, TX USA
+#    description: Assisted with examinations and attendance for introductory astronomy class of approximately 300 students. Helped with departmental events and mailing as well as other miscellaneous duties.
 - title: Philanthropy
   entries:
   - title: National Honors Society
