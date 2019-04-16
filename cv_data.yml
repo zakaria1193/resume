@@ -10,7 +10,7 @@ preamble:
   contact:
     phone: +1(405)308-0473
     mail: will.t.barnes@rice.edu
-    webpage: https://wtbarnes.github.io
+    webpage: "https://wtbarnes.github.io"
     twitter: wtbarnes_
     github: wtbarnes
     orcid: "0000-0001-9642-6089"
@@ -31,7 +31,7 @@ sections:
     dates: 2016-present (expected May 2019)
     gpa:
     entries:
-      - "Thesis: Diagnosing the Frequency of Energy Deposition in the Magnetically-closed Solar Corona"
+      - "Thesis: Diagnosing the Frequency of Energy Deposition in the Magnetically-Closed Solar Corona"
       - "Advisor: Stephen Bradshaw, Ph.D."
   - school: Rice University
     degree: M.S. Physics
