@@ -4,18 +4,21 @@ preamble:
     middle: Thomas
     last: Barnes
   address:
-    street: 6100 Main Street MS-61
-    city: Houston, TX 77005
+    street: 3176 Porter Dr
+    city: Palo Alto, CA 94304
     country: USA
   contact:
-    phone: +1(405)308-0473
-    mail: will.t.barnes@rice.edu
+    mail: barnes@baeri.org
     webpage: "https://wtbarnes.github.io"
     twitter: wtbarnes_
     github: wtbarnes
     orcid: "0000-0001-9642-6089"
+    gitlab: wtbarnes
+    googlescholar:
+      id: "DSjKF4gAAAAJ&hl"
+      name: Will Barnes
   current:
-    role: Graduate Research Assistant
+    role: Postdoctoral Research Scientist
 sections:
 - title: Personal Information
   entries:
@@ -28,11 +31,11 @@ sections:
   - school: Rice University
     degree: Ph.D. Physics
     location: Houston, TX USA
-    dates: 2016-present (expected May 2019)
+    dates: 2016-2019
     gpa:
     entries:
       - "Thesis: Diagnosing the Frequency of Energy Deposition in the Magnetically-Closed Solar Corona"
-      - "Advisor: Stephen Bradshaw, Ph.D."
+      - "Advisor: Dr. Stephen Bradshaw"
   - school: Rice University
     degree: M.S. Physics
     location: Houston, TX USA
@@ -44,17 +47,42 @@ sections:
     gpa: "GPA: 3.89/4.00"
     degree: "B.S. Astrophysics"
     entries:
-      - "Thesis: Astrophysical Applications of Dusty Plasma Physics, Advisor: Lorin Matthews, Ph.D."
+      - "Thesis: Astrophysical Applications of Dusty Plasma Physics, Advisor: Dr. Lorin Matthews"
       - University Honors Program, Magna Cum Laude, Phi Beta Kappa, Dean's List
       - "Minors: Mathematics, Great Texts of the Western Tradition"
-- title: Research Fellowships
+- title: Experience
+  entries:
+  - title: Postdoctoral Research Scientist
+    institution: Lockheed Martin Solar and Astrophysics Laboratory
+    location: Palo Alto, CA USA
+    dates: May 2019-present
+    advisor: "Dr. Mark Cheung"
+    description: "Developing workflows for analyzing AIA imaging data using HPC/cloud infrastructure in collaboration with Stanford U. and NASA Ames"
+  - title: Research Computing Intern
+    dates: October 2018-May 2019
+    institution: Center for Research Computing, Rice University
+    location: Houston, TX USA
+    description: Developed web application for scheduled data transfers with Globus. Refactored high performance computing documentation in reStructuredText and Sphinx with interactive examples. Explored research applications for cloud computing.
+  - title: Graduate Research Assistant
+    institution: Rice University
+    location: Houston, TX USA
+    dates: May 2014-May 2019
+    advisor: Dr. Stephen Bradshaw
+    description: "Investigated observable signatures of nanoflare heating frequency using hydrodynamic simulations of coronal loops, forward modeling, and machine learning"
+- title: Research Fellowships Awarded
   entries:
   - title: NRC Research Associateship Postdoctoral Fellowship
     institution: Naval Research Laboratory, National Academies of Sciences
     location: Washington, D.C. USA
     dates: ""
-    advisor: Harry Warren, Ph.D.
+    advisor: ""
     description: Awarded 1-year NRC postdoctoral fellowship to study observational signatures of thermal non-equilibrium in coronal loops
+  - title: NASA Postdoctoral Program Fellowship (declined)
+    institution: NASA Goddard Space Flight Center, Universities Space Research Association
+    location: Washington, D.C. USA
+    dates: ""
+    advisor: ""
+    description: Awarded competitive NPP Fellowship to study physics of coronal heating; declined in favor of NRC postdoctoral fellowship
   - title: NSF REU Research Fellowship
     institution: Baylor University, CASPER
     location: Waco, TX USA
@@ -83,8 +111,9 @@ sections:
       - W.T. Barnes
       - S.J. Bradshaw
       - N.M. Viall
-      journal: under review
+      journal: ApJ (accepted)
       year: 2019
+      bibcode: "2019arXiv190603350B"
     - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores II. Nanoflare Trains
       authors: 
       - W.T. Barnes
@@ -132,6 +161,11 @@ sections:
   entries:
   - title: Conference Talks
     entries:
+    - dates: 11-14 June 2019
+      location: St Andrews, UK
+      event: Coronal Loops Workshop IX
+      title: "Constraining the Frequency of Energy Deposition through Quantitative Comparisons of Models and Observations (invited)"
+      institution: University of St Andrews
     - dates: 13-15 November 2018
       location: Boulder, CO
       event: Heliophysics Community Python Working Group Meeting
@@ -176,6 +210,11 @@ sections:
       title: Dust Grain Charging in a Protoplanetary Disk
   - title: Seminars
     entries:
+    - dates: 20 June 2019
+      location: Palo Alto, CA
+      event: Lockheed Martin Solar and Astrophysics Seminar
+      title: "Seeing the Trees through a Random Forest: Details of Active Region Heating Revealed through Forward Modeling and Classification"
+      institution: Lockheed Martin Solar and Astrophysics Laboratory
     - dates: 19 November 2018
       location: Houston, TX
       event: Space Physics Seminar Series
@@ -363,16 +402,11 @@ sections:
   - Sigma Pi Sigma
 - title: Other Employment Experience
   entries:
-  - title: Research Computing Intern
-    dates: October 2018-present
-    org: Center for Research Computing, Rice University
-    location: Houston, TX USA
-    description: Developed web application for scheduled data transfers with Globus. Refactored high performance computing documentation in reStructuredText and Sphinx with interactive examples. Explored research applications for cloud computing.
-#  - title: Office Assistant
-#    dates: January 2010-May 2013
-#    org: Department of Physics, Baylor University
-#    location: Waco, TX USA
-#    description: Assisted with examinations and attendance for introductory astronomy class of approximately 300 students. Helped with departmental events and mailing as well as other miscellaneous duties.
+  - title: Office Assistant
+    dates: January 2010-May 2013
+    org: Department of Physics, Baylor University
+    location: Waco, TX USA
+    description: Assisted with examinations and attendance for introductory astronomy class of approximately 300 students. Helped with departmental events and mailing as well as other miscellaneous duties.
 - title: Philanthropy
   entries:
   - title: National Honors Society
