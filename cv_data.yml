@@ -53,7 +53,7 @@ sections:
 - title: Experience
   entries:
   - title: Postdoctoral Research Scientist
-    institution: Lockheed Martin Solar and Astrophysics Laboratory
+    institution: Lockheed Martin Solar and Astrophysics Laboratory, Bay Area Environmental Research Institute
     location: Palo Alto, CA USA
     dates: May 2019-present
     advisor: "Dr. Mark Cheung"
@@ -222,9 +222,9 @@ sections:
       title: Understanding Heating Frequency in Active Region Loops through Forward Modeling and Machine Learning
     - dates: 11 July 2018
       location: Washington, D.C.
-      event: NRL Solar and Heliospheric Physics Branch Seminar (Invited)
+      event: NRL Solar and Heliospheric Physics Branch Seminar
       institution: Naval Research Laboratory
-      title: Investigating Heating Frequency in Active Region Cores through Timelag Analysis of Forward Modeled Emission
+      title: Investigating Heating Frequency in Active Region Cores through Timelag Analysis of Forward Modeled Emission (invited)
       selected: True
     - dates: 27 February 2017
       location: Houston, TX
