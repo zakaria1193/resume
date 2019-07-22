@@ -55,6 +55,12 @@ sections:
       - "Minors: Mathematics, Great Texts of the Western Tradition"
 - title: Experience
   entries:
+  - title: Visiting Postdoctoral Scholar
+    institution: W. W. Hansen Experimental Physics Laboratory, Stanford University
+    location: Stanford, CA
+    dates: July 2019--present
+    advisor: ""
+    description: "Exploring applications of HPC/cloud computing to analysis of HMI data"
   - title: Postdoctoral Research Scientist
     institution: Lockheed Martin Solar and Astrophysics Laboratory, Bay Area Environmental Research Institute
     location: Palo Alto, CA
@@ -67,7 +73,7 @@ sections:
     location: Houston, TX
     description: Developed web application for scheduled data transfers with Globus. Refactored high performance computing documentation in reStructuredText and Sphinx with interactive examples. Explored research applications for cloud computing.
   - title: Graduate Research Assistant
-    institution: Rice University
+    institution: Department of Physics and Astronomy, Rice University
     location: Houston, TX
     dates: May 2014--May 2019
     advisor: Dr. Stephen Bradshaw
