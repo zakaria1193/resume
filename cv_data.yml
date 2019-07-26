@@ -124,9 +124,9 @@ sections:
       - W.T. Barnes
       - S.J. Bradshaw
       - N.M. Viall
-      journal: ApJ (accepted)
+      journal: ApJ
       year: 2019
-      bibcode: "2019arXiv190603350B"
+      doi: "10.3847/1538-4357/ab290c"
     - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores II. Nanoflare Trains
       authors: 
       - W.T. Barnes
