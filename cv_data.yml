@@ -114,32 +114,47 @@ sections:
     entries:
     - title: Understanding Heating in Active Region Cores through Machine Learning II. Classifying Observations 
       authors:
-      - W.T. Barnes
-      - S.J. Bradshaw
-      - N.M. Viall
+      - W. T. Barnes
+      - S. J. Bradshaw
+      - N. M. Viall
       journal: in prep
       year: 2019
+    - title: Solar Active Region Heating Diagnostics from High Temperature Emission using the Marshall Grazing Incidence X-ray Spectrometer (MaGIXS)
+      authors:
+      - P. S. Athiray
+      - Amy R. Winebarger
+      - Will T. Barnes
+      - Stephen J. Bradshaw
+      - Sabrina Savage
+      - Harry P. Warren
+      - Ken Kobayashi
+      - Patrick Champey
+      - Leon Golub
+      - Lindsay Glesener
+      journal: ApJ
+      year: 2019
+      doi: "10.3847/1538-4357/ab3eb4"
     - title: Understanding Heating in Active Region Cores through Machine Learning I. Numerical Modeling and Predicted Observables
       authors:
-      - W.T. Barnes
-      - S.J. Bradshaw
-      - N.M. Viall
+      - W. T. Barnes
+      - S. J. Bradshaw
+      - N. M. Viall
       journal: ApJ
       year: 2019
       doi: "10.3847/1538-4357/ab290c"
     - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores II. Nanoflare Trains
       authors: 
-      - W.T. Barnes
-      - P.J. Cargill
-      - S.J. Bradshaw
+      - W. T. Barnes
+      - P. J. Cargill
+      - S. J. Bradshaw
       journal: ApJ
       year: 2016
       doi: "10.3847/1538-4357/833/2/217"
     - title: Inference of Heating Properties from Hot Non-flaring Plasmas in Active Region Cores I. Single Nanoflares
       authors:
-      - W.T. Barnes
-      - P.J. Cargill
-      - S.J. Bradshaw
+      - W. T. Barnes
+      - P. J. Cargill
+      - S. J. Bradshaw
       journal: ApJ
       year: 2016
       doi: "10.3847/0004-637X/829/1/31"
@@ -147,16 +162,16 @@ sections:
     entries:
     - title: "ChiantiPy: A Python Package for Astrophysical Spectroscopy"
       authors:
-      - W.T. Barnes
-      - K.P. Dere
+      - W. T. Barnes
+      - K. P. Dere
       journal: 16th SciPy Conference
       year: 2017
       doi: 10.25080/shinma-7f4c6e7-011
     - title: "Dust Grain Growth in a Protoplanetary Disk: Effects of Location on Charge and Size"
       authors:
-      - W.T. Barnes
-      - L.S. Matthews
-      - T.W. Hyde
+      - W. T. Barnes
+      - L. S. Matthews
+      - T. W. Hyde
       journal: 44th LPSC
       year: 2013
       bibcode: "2013LPI....44.1897B"
@@ -164,7 +179,7 @@ sections:
     entries:
     - title: "Modeling Coronal Loops in 3D with sunpy.coordinates"
       authors:
-      - W.T. Barnes
+      - W. T. Barnes
       journal: SunPy Blog
       year: 2018
       url:
