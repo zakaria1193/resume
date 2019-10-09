@@ -109,8 +109,9 @@ def author_filter(authors, tex=False):
     """
     Filter author list
     """
+    my_names = ['W. T. Barnes', 'Will T. Barnes']
     bold = '\\underline{{{}}}' if tex else '<strong>{}</strong>'
-    return ', '.join([bold.format(a) if a == 'W.T. Barnes' else a for a in authors])
+    return ', '.join([bold.format(a) if a in my_names else a for a in authors])
 
 
 def shorten_list(array, max_length):
