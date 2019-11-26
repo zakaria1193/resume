@@ -83,7 +83,7 @@ sections:
   - title: NRC Research Associateship Postdoctoral Fellowship
     institution: Naval Research Laboratory, National Academies of Sciences
     location: Washington, D.C.
-    dates: ""
+    dates: "Jan. 2020--"
     year: 2019
     advisor: ""
     description: Awarded 1-year NRC postdoctoral fellowship to study observational signatures of thermal non-equilibrium in coronal loops
@@ -294,6 +294,11 @@ sections:
       title: "Why is the Sun So Hot? A Current Perspective on Coronal Heating"
   - title: Posters
     entries:
+    - dates: 9--13 Dec. 2019
+      location: San Francisco, CA
+      event: American Geophysical Union Fall Meeting
+      title: "The Sun at Scale: Interactive Analysis of High Resolution EUV Imaging Data on HPC Platforms with Dask"
+      institution: American Geophysical Union
     - dates: 30 Jul.--3 Aug. 2018
       location: Cocoa Beach, FL
       event: Solar Heliospheric and Interplanetary Environment (SHINE) Workshop
@@ -335,7 +340,13 @@ sections:
       title: "Dust Grain Growth in a Protoplanetary Disk: Effects of Location on Charge and Size"
       bibcode: "2013LPI....44.1897B"
 - title: Professional Service
+  reviewer_for:
+  - The Astrophysical Journal
   entries:
+  - role: Member of Scientific Organizing Committee
+    event: Python in Astronomy Conference 2020
+    description: Organize webpage, communicate meeting announcements to community, and assist in choosing program of speakers
+    dates: 20--24 Apr. 2020
   - role: Discussion session co-organizer and co-chair (with S. Bradshaw and N. Viall)
     event: SHINE Workshop
     dates: 30 Jul.--3 Aug. 2018
