@@ -181,6 +181,9 @@ A current publication list is also available from
 %-------------------------------------------------------------------------------%
 ((* set sect = data.sections | select_by_attr_name("title", "Professional Service") *))
 \cvsection{((( sect.title | escape_tex )))}
+
+\textbf{Reviewer for:} ((( sect.reviewer_for | join(',') )))
+
 \begin{cventries}
 ((* for i in sect.entries *))
 \cventry
