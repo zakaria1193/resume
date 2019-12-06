@@ -4,6 +4,7 @@ See http://flask.pocoo.org/snippets/55/ for more info.
 """
 import re
 import logging
+import calendar
 
 
 LATEX_SUBS = (
@@ -140,3 +141,25 @@ def doi_to_url(value, doi, bibcode, link_format='html'):
         return f'\href{{{link}}}{{{value}}}'
     else:
         raise NotImplementedError(f'{link_format} links not implemented')
+
+
+def date_filter(date, format='full', drop_present=False):
+    if date == 'present':
+        return 'present' if not drop_present else ''
+    # Sometimes we want just lists of years
+    if type(date) is str:
+        return date
+    # Otherwise, format correctly
+    month = date['month']
+    year = date['year']
+    if format == 'full':
+        return f'{calendar.month_name[month]} {year}'
+    elif format == 'abbreviated':
+        return f'{calendar.month_abbr[month]} {year}'
+    elif format == 'numerical':
+        return f'{month}/{year}'
+    elif format == 'numerical_short_year':
+        return f'{month}/{str(year)[2:]}'
+    else:
+        raise ValueError('Invalid format')
+

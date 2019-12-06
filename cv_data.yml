@@ -31,8 +31,9 @@ sections:
   - school: Rice University
     degree: Ph.D. Physics
     location: Houston, TX
-    dates: 2016--2019
-    year: 2019
+    dates:
+      start: 2016
+      end: 2019
     gpa:
     entries:
       - "Thesis: Diagnosing the Frequency of Energy Deposition in the Magnetically-Closed Solar Corona"
@@ -41,12 +42,14 @@ sections:
     degree: M.S. Physics
     location: Houston, TX
     gpa: "GPA: 3.88/4.00"
-    dates: 2013--2016
-    year: 2016
+    dates:
+      start: 2013
+      end: 2016
   - school: Baylor University
     location: Waco, TX
-    dates: 2009--2013
-    year: 2013
+    dates:
+      start: 2009
+      end: 2013
     gpa: "GPA: 3.89/4.00"
     degree: "B.S. Astrophysics"
     entries:
@@ -55,27 +58,61 @@ sections:
       - "Minors: Mathematics, Great Texts of the Western Tradition"
 - title: Experience
   entries:
+  - title: NRC Postdoctoral Fellow
+    institution: Naval Research Laboratory
+    location: Washington, D.C.
+    dates:
+      start:
+        month: 1
+        year: 2020
+      end: present
+    advisor: Harry Warren
+    description: ""
   - title: Visiting Postdoctoral Scholar
     institution: W. W. Hansen Experimental Physics Laboratory, Stanford University
     location: Stanford, CA
-    dates: July 2019--present
+    dates:
+      start:
+        month: 7
+        year: 2019
+      end:
+        month: 12
+        year: 2019
     advisor: ""
     description: "Exploring applications of HPC/cloud computing to analysis of HMI data"
   - title: Postdoctoral Research Scientist
     institution: Lockheed Martin Solar and Astrophysics Laboratory, Bay Area Environmental Research Institute
     location: Palo Alto, CA
-    dates: May 2019--present
+    dates:
+      start:
+        month: 5
+        year: 2019
+      end:
+        month: 12
+        year: 2019
     advisor: "Dr. Mark Cheung"
     description: "Developing workflows for analyzing AIA imaging data using HPC/cloud infrastructure in collaboration with Stanford U. and NASA Ames"
   - title: Research Computing Intern
-    dates: Oct. 2018--May 2019
+    dates:
+      start:
+        month: 10
+        year: 2018
+      end:
+        month: 5
+        year: 2019
     institution: Center for Research Computing, Rice University
     location: Houston, TX
     description: Developed web application for scheduled data transfers with Globus. Refactored high performance computing documentation in reStructuredText and Sphinx with interactive examples. Explored research applications for cloud computing.
   - title: Graduate Research Assistant
     institution: Department of Physics and Astronomy, Rice University
     location: Houston, TX
-    dates: May 2014--May 2019
+    dates:
+      start:
+        month: 5
+        year: 2014
+      end:
+        month: 5
+        year: 2019
     advisor: Dr. Stephen Bradshaw
     description: "Investigated observable signatures of nanoflare heating frequency using hydrodynamic simulations of coronal loops, forward modeling, and machine learning"
 - title: Research Fellowships Awarded
@@ -118,6 +155,22 @@ sections:
       - S. J. Bradshaw
       - N. M. Viall
       journal: in prep
+      year: 2019
+    - title: "The SunPy Project: Open Source Development and Status of the Version 1.0 Core Package"
+      authors:
+      - The SunPy Community
+      - Will T. Barnes
+      - Monica G. Bobra
+      - Steven D. Christe
+      - Nabil Freij
+      - Laura A. Hayes
+      - Jack Ireland
+      - Stuart Mumford
+      - David Pérez-Suárez
+      - Daniel F.\ Ryan
+      - Albert Y. Shih
+      - et al.
+      journal: ApJ (in press)
       year: 2019
     - title: Solar Active Region Heating Diagnostics from High Temperature Emission using the Marshall Grazing Incidence X-ray Spectrometer (MaGIXS)
       authors:
@@ -189,63 +242,129 @@ sections:
   entries:
   - title: Conference Talks
     entries:
-    - dates: 16--20 Sept. 2019
+    - dates:
+        start:
+          day: 16
+          month: 9
+          year: 2019
+        end:
+          day: 20
+          month: 9
+          year: 2019
       location: Amsterdam, The Netherlands
       event: Machine Learning in Heliophysics
       title: "Seeing the Trees through a Random Forest: Details of Active Region Heating Revealed through Forward Modeling and Classification"
       institution: "Centrum Wiskunde and Informatica"
-      year: 2019      
-    - dates: 11--14 Jun. 2019
+      year: 2019
+      selected: true
+    - dates:
+        start:
+          day: 11
+          month: 6
+          year: 2019
+        end:
+          day: 14
+          month: 6
+          year: 2019
       location: St Andrews, UK
       event: Coronal Loops Workshop IX
       title: "Constraining the Frequency of Energy Deposition through Quantitative Comparisons of Models and Observations (invited)"
       institution: University of St Andrews
       year: 2019
-    - dates: 13--15 Nov. 2018
+      selected: true
+    - dates:
+        start: 
+          day: 13
+          month: 11
+          year: 2018
+        end:
+          day: 15
+          month: 11
+          year: 2018
       location: Boulder, CO
       event: Heliophysics Community Python Working Group Meeting
       title: "fiasco: a Python Interface to the CHIANTI Atomic Database"
       institution: Laboratory for Atmospheric and Space Physics
       year: 2018
-    - dates: 29 Oct.--2 Nov. 2018
+    - dates:
+        start: 
+          day: 29
+          month: 10
+          year: 2018
+        end: 
+          day: 2
+          month: 11
+          year: 2018
       location: Ghent, Belgium
       event: 2018 SDO Science Workshop
       title: "Understanding Heating Properties of Active Region Loops through Forward Modeling and Machine Learning"
       institution: Royal Observatory Belgium, Solar-Terrestrial Centre of Excellence
-      year: 2018
       bibcode: "2018csc..confE..72B"
-    - dates: 21--24 May 2018
+      selected: true
+    - dates:
+        start:
+          day: 21
+          month: 5
+          year: 2018
+        end:
+          day: 24
+          month: 5
+          year: 2018
       location: Leesburg, VA
       event: Triennial Earth-Sun Summit
       title: "Timelag Analysis of Simulated Active Region Cores Heated by Nanoflares"
       institution: American Geophysical Union
-      year: 2018
-    - dates: 30 Apr.--4 May 2018
+      selected: true
+    - dates:
+        start:
+          day: 30
+          month: 4
+          year: 2018
+        end:
+          day: 4
+          month: 5
+          year: 2018
       location: New York City, NY
       event: "Python in Astronomy 2018"
       title: "A Complete fiasco - The Difficulties of Dealing with Atomic Data and a Possible Pythonic Solution"
       doi: 10.5281/zenodo.1249002
       institution: Center for Computational Astrophysics, The Flatiron Institute
-      year: 2018
+      selected: true
     - dates: 10--16 Jul. 2017
       location: Austin, TX
       event: "16th Python in Science Conference"
       title: "ChiantiPy: a Python package for Astrophysical Spectroscopy"
       institution: SciPy, Enthought
       year: 2017
-    - dates: 27--30 Jun. 2017
+    - dates:
+        start: 
+          day: 27
+          month: 6
+          year: 2017
+        end:
+          day: 30
+          month: 6
+          year: 2017
       location: Palermo, Italy
       event: Coronal Loops Workshop VIII
       title: Constraining Nanoflare Heating Frequency with a Global Active Region Model
       institution: INAF IASF Palermo
-      year: 2017
-    - dates: 31 May--3 Jun. 2016
+      selected: true
+    - dates:
+        start:
+          day: 31
+          month: 5
+          year: 2016
+        end:
+          day: 3
+          month: 6
+          year: 2016
       location: Boulder, CO
       institution: American Astronomical Society
       event: 47th Annual Solar Physics Division Meeting
       title: Hot Non-flaring Plasmas in Active Region Cores Heated by Single Nanoflares
       bibcode: "2016SPD....4720203B"
-      year: 2016
+      selected: true
     - dates: 14 Sept. 2012
       location: College Station, TX
       institution: Texas A&M University
@@ -427,25 +546,39 @@ sections:
   entries:
   - name: Metcalf Travel Award to the SDO Workshop
     awarder: Solar physics Division of the AAS
-    dates: Nov. 2018
+    dates:
+      month: 11
+      year: 2018
   - name: Scientific Image Contest (Second Place)
     awarder: Wiess School of Natural Sciences, Rice University
-    dates: Nov. 2017
+    dates:
+      month: 11
+      year: 2017
   - name: Outstanding Student Poster Award
     awarder: SHINE Workshop
-    dates: Jul. 2017
+    dates:
+      month: 7
+      year: 2017
   - name: William and Elva Gordon Fellowship
     awarder: Department of Physics and Astronomy, Rice University
-    dates: May 2016
+    dates:
+      month: 5
+      year: 2016
   - name: Chuoke Graduate Student Award
     awarder: Department of Physics and Astronomy, Rice University
-    dates: May 2016
-  - name: Studentship Travel Award for  SPD Annual Meetings
+    dates:
+      month: 5
+      year: 2016
+  - name: Studentship Travel Award for AAS Solar Physics Division Meeting
     awarder: Solar Physics Division of the AAS
-    dates: 2015, 2016, 2018
+    dates:
+      month: 4
+      year: 2015
   - name: URSA Scholars Week Outstanding Research Poster in Physics
     awarder: Baylor University
-    dates: Apr. 2013
+    dates:
+      month: 4
+      year: 2013
   - name: President's Gold Scholarship
     awarder: Baylor University
     dates: 2009--2013
