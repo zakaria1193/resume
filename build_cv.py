@@ -63,6 +63,10 @@ class BuildCV(object):
         return self.jenv_tex.get_template("cv.tex").render(
             data=self.data, **kwargs)
 
+    def tex_short_cv(self, **kwargs):
+        return self.jenv_tex.get_template("cv-short.tex").render(
+            data=self.data, **kwargs)
+
     def markdown_cv(self, pdf_link=None):
         return self.jenv.get_template("cv.md").render(
             data=self.data, pdf_link=pdf_link)
@@ -81,6 +85,7 @@ if __name__ == '__main__':
     parser.add_argument("--md_out_file", help="where to write markdown version of CV")
     parser.add_argument("--html_out_file", help="where to write HTML version of CV")
     parser.add_argument("--tex_out_file", help="where to write TeX version of CV")
+    parser.add_argument("--tex_short_out_file", help="where to write short TeX version of CV")
     parser.add_argument("--pdf_link", help="where to link to PDF version of CV")
     args = parser.parse_args()
     # build cv
@@ -93,11 +98,15 @@ if __name__ == '__main__':
                filters.select_by_attr_name,
                filters.to_cvlist,
                filters.author_filter,
-               filters.doi_to_url]
+               filters.doi_to_url,
+               filters.date_filter]
     cv = BuildCV(args.cv_data, filters=filters)
     if args.tex_out_file is not None:
         with open(args.tex_out_file, 'w') as f:
-            f.write(cv.tex_cv(moderncv_color='black', moderncv_style='banking'))
+            f.write(cv.tex_cv())
+    if args.tex_short_out_file is not None:
+        with open(args.tex_short_out_file, 'w') as f:
+            f.write(cv.tex_short_cv())
     if args.md_out_file is not None:
         with open(args.md_out_file, 'w') as f:
             f.write(cv.markdown_cv(pdf_link=args.pdf_link))

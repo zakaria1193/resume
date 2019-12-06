@@ -26,8 +26,14 @@ md: outdir
 tex: outdir
 	$(PYTHON) build_cv.py --tex_out_file $(OUTDIR)/cv.tex
 
+tex_short: outdir
+	$(PYTHON) build_cv.py --tex_short_out_file $(OUTDIR)/cv-short.tex
+
 pdf: install_tex tex
 	cd $(OUTDIR); $(LATEX) cv.tex; cd ..
+
+pdf_short: install_tex tex_short
+	cd $(OUTDIR); $(LATEX) cv-short.tex; cd ..
 
 clean:
 	rm -r $(OUTDIR)
