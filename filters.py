@@ -21,7 +21,7 @@ def escape_tex(value):
     """
     Escape TeX special characters
     """
-    newval = value
+    newval = str(value)
     for pattern, replacement in LATEX_SUBS:
         newval = pattern.sub(replacement, newval)
     return newval

@@ -1,4 +1,4 @@
-PYTHON=python
+PYTHON=python3
 LATEX=xelatex
 OUTDIR=output
 ifdef PDF_LINK
@@ -34,6 +34,9 @@ pdf: install_tex tex
 
 pdf_short: install_tex tex_short
 	cd $(OUTDIR); $(LATEX) cv-short.tex; cd ..
+
+init:
+	pip3 install -r requirements.txt --user
 
 clean:
 	rm -r $(OUTDIR)

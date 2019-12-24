@@ -18,7 +18,7 @@ class BuildCV(object):
     def __init__(self, yaml_config_file, filters=None, templates=None):
         self.filters = filters
         with open(yaml_config_file, 'r') as f:
-            self.data = yaml.load(f)
+            self.data = yaml.load(f, Loader=yaml.FullLoader)
         templates = {} if templates is None else templates
         self.loader = jinja2.loaders.DictLoader(templates)
 
